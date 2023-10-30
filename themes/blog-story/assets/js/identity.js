@@ -19,7 +19,7 @@ netlifyIdentity.on('close', () => console.log('Widget closed'));
 //netlifyIdentity.off('login', handler); // to unbind a single handler
 
 // Close the modal
-netlifyIdentity.close();
+//netlifyIdentity.close();
 
 // Log out the user
 //netlifyIdentity.logout();
