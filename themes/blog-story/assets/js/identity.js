@@ -14,14 +14,14 @@ netlifyIdentity.on('open', () => console.log('Widget opened'));
 netlifyIdentity.on('close', () => console.log('Widget closed'));
 
 // Unbind from events
-netlifyIdentity.off('login'); // to unbind all registered handlers
-netlifyIdentity.off('login', handler); // to unbind a single handler
+//netlifyIdentity.off('login'); // to unbind all registered handlers
+//netlifyIdentity.off('login', handler); // to unbind a single handler
 
 // Close the modal
 netlifyIdentity.close();
 
 // Log out the user
-netlifyIdentity.logout();
+//netlifyIdentity.logout();
 
 // Refresh the user's JWT
 // Call in on('login') handler to ensure token refreshed after it expires (1hr)
