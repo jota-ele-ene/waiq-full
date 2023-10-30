@@ -4,6 +4,7 @@ netlifyIdentity.open();
 // Get the current user:
 // Available after on('init') is invoked
 const user = netlifyIdentity.currentUser();
+console.log('user:' + user)
 
 // Bind to events
 netlifyIdentity.on('init', user => console.log('init', user));
@@ -26,7 +27,7 @@ netlifyIdentity.close();
 // Refresh the user's JWT
 // Call in on('login') handler to ensure token refreshed after it expires (1hr)
 // Note: this method returns a promise.
-netlifyIdentity.refresh().then((jwt)=>console.log(jwt))
+//netlifyIdentity.refresh().then((jwt)=>console.log(jwt))
 
 // Change language
 netlifyIdentity.setLocale('en');
