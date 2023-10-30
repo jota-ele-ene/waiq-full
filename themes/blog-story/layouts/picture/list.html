@@ -6,11 +6,12 @@
         <p>{{ .Params.summary | safeHTML }}</p>
     </div>
 
-    <!-- Gallery -->
+    <!-- Gallery
     <div class="gallery {{ .Params.style }}">
         {{ range shuffle (where .Site.Pages.ByDate "Section" "picture")}}
             {{ .Render "summary" }}
         {{ end }}
     </div>
+    -->
 </section>
 {{ end }}
