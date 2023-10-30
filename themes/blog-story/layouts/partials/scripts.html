@@ -10,6 +10,9 @@
 
 {{ $js := slice $jQuery $scrollex $scrolly $browser $breakpoints $util $main $demo | resources.Concat "js/bundle.js" | minify }}
 
+{{ if .Site.Params.gated }}
+  {{ $demo := resources.Get "js/identity.js" }}
+{{end}}
+
 <!-- Scripts -->
 <script src='{{ $js.RelPermalink }}'></script>
-
