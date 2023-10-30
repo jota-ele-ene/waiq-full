@@ -1,18 +1,21 @@
 // Open the modal
-netlifyIdentity.open();
+//netlifyIdentity.open();
 
 // Get the current user:
 // Available after on('init') is invoked
-const user = netlifyIdentity.currentUser();
-console.log('user:' + user)
+//const user = netlifyIdentity.currentUser();
+//console.log('user:' + user)
 
 // Bind to events
-netlifyIdentity.on('init', user => console.log('init', user));
-netlifyIdentity.on('login', user => console.log('login', user));
-netlifyIdentity.on('logout', () => console.log('Logged out'));
-netlifyIdentity.on('error', err => console.error('Error', err));
-netlifyIdentity.on('open', () => console.log('Widget opened'));
-netlifyIdentity.on('close', () => console.log('Widget closed'));
+//netlifyIdentity.on('init', user => console.log('init', user));
+//netlifyIdentity.on('login', user => console.log('login', user));
+netlifyIdentity.on('login', user => {
+  console.log('login', user));
+  netlifyIdentity.close()
+})//netlifyIdentity.on('logout', () => console.log('Logged out'));
+//netlifyIdentity.on('error', err => console.error('Error', err));
+//netlifyIdentity.on('open', () => console.log('Widget opened'));
+//netlifyIdentity.on('close', () => console.log('Widget closed'));
 
 // Unbind from events
 //netlifyIdentity.off('login'); // to unbind all registered handlers
