@@ -7,12 +7,9 @@
 {{ $util := resources.Get "js/util.js" }}
 {{ $main := resources.Get "js/main.js" }}
 {{ $demo := resources.Get "js/demo.js" }}
+{{ $identity := resources.Get "js/identity.js" }}
 
-{{ $js := slice $jQuery $scrollex $scrolly $browser $breakpoints $util $main $demo | resources.Concat "js/bundle.js" | minify }}
-
-{{ if .Site.Params.gated }}
-  {{ $demo := resources.Get "js/identity.js" }}
-{{end}}
+{{ $js := slice $jQuery $scrollex $scrolly $browser $breakpoints $util $main $demo $identity | resources.Concat "js/bundle.js" | minify }}
 
 <!-- Scripts -->
 <script src='{{ $js.RelPermalink }}'></script>
