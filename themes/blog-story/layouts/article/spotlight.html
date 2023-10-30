@@ -1,0 +1,13 @@
+<!-- Spotlight -->
+        <section class="spotlight style1 content-align-left image-position-center onscroll-image-fade-in" id="first">
+            <div class="content">
+                <h2>{{ .Title }}</h2>
+                {{ with .Content }}<p>{{ . | safeHTML }}</p>{{ end }}
+                <ul class="actions stacked">
+                    <li><a href="{{ with .Params.button_link }}{{ . }}{{ end }}" class="button">{{ .Params.button_label }}</a></li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="" />
+            </div>
+        </section>

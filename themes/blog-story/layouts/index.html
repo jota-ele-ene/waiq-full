@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+	{{ with .Site.GetPage "/banner/Home.md" }}{{ .Render "summary" }}{{ end }}
+
+	{{ range where .Site.Pages.ByDate "Section" "article" }}
+     {{ if .Params.featured }}
+           {{ .Render "spotlight" }}
+     {{ end }}
+  {{ end }}
+
+  {{ .Render "picture/list" }}
+
+	{{ partial "footer" . }} 
+
+{{ end }}
