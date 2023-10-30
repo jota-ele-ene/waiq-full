@@ -59,4 +59,3 @@ collections:
       - { label: 'Twitter/X profile', name: 'twitter', widget: 'string' }
       - { label: 'Github profile', name: 'github', widget: 'string' }
       - { label: 'Web/blog', name: 'web', widget: 'string' }
-      - { label: 'Image', name: 'image', widget: 'string' }
