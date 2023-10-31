@@ -11,7 +11,7 @@
 //netlifyIdentity.on('login', user => console.log('login', user));
 netlifyIdentity.init();
 const user = netlifyIdentity.currentUser();
-console.log("user: "+user)
+console.log("user: "+JSON.stringify(user))
 netlifyIdentity.on('login', user => {
   console.log('login', user);
   netlifyIdentity.close()
