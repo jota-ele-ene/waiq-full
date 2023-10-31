@@ -10,7 +10,7 @@
 //netlifyIdentity.on('init', user => console.log('init', user));
 //netlifyIdentity.on('login', user => console.log('login', user));
 netlifyIdentity.on('login', user => {
-  console.log('login', user));
+  console.log('login', user);
   netlifyIdentity.close()
 })//netlifyIdentity.on('logout', () => console.log('Logged out'));
 //netlifyIdentity.on('error', err => console.error('Error', err));
