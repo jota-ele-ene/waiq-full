@@ -9,6 +9,7 @@
 // Bind to events
 //netlifyIdentity.on('init', user => console.log('init', user));
 //netlifyIdentity.on('login', user => console.log('login', user));
+netlifyIdentity.init();
 netlifyIdentity.on('login', user => {
   console.log('login', user);
   netlifyIdentity.close()
