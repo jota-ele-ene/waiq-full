@@ -1,9 +1,13 @@
 <script>
   if (window.netlifyIdentity) {
+    console.log("netlifyIdentity")
     window.netlifyIdentity.on("init", user => {
+      console.log("netlifyIdentity: on init:"+JSON.stringify(user))
       if (!user) {
+        console.log("netlifyIdentity: on init, no user ")
         window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
+          console.log("netlifyIdentity: on login, redirecting ")
+          document.location.href = "/ers/";
         });
       }
     });
