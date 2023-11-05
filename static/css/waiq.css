@@ -63,3 +63,12 @@
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
+
+.gallery.style2 article .caption>* {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.gallery.style2 article .caption .icons .brands {
+    font-size: 1.2rem;
+}
