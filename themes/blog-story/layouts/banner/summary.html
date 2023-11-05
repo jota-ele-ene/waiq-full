@@ -4,8 +4,6 @@ margin: 0;
 overflow: clip;
 contain: content;
  ">
- <div data-netlify-identity-menu></div>
-
     <div class="content">
         {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
         {{ with .Params.Subtitle }}<p class="major">{{ . | safeHTML }}</p>{{ end }}

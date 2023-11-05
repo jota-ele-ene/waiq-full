@@ -41,6 +41,7 @@ publishDir = "public"
   description = "A (modular, highly tweakable) responsive one-page theme for Hugo"
   logo = "images/banner.jpg"
   favicon = true
+  #gated = true
 
 [Params.social]
   github = "https://github.com/caressofsteel/"
