@@ -51,11 +51,11 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string', required: 'false' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: 'false' }
       - { label: 'Image', name: 'image', widget: 'string' }
-      - { label: 'Linkedin profile', name: 'linkedin', widget: 'string' }
-      - { label: 'Twitter/X profile', name: 'twitter', widget: 'string' }
-      - { label: 'Github profile', name: 'github', widget: 'string' }
-      - { label: 'Web/blog', name: 'web', widget: 'string' }
+      - { label: 'Linkedin profile', name: 'linkedin', widget: 'string', required: 'false' }
+      - { label: 'Twitter/X profile', name: 'twitter', widget: 'string', required: 'false' }
+      - { label: 'Github profile', name: 'github', widget: 'string', required: 'false' }
+      - { label: 'Web/blog', name: 'web', widget: 'string', required: 'false' }
