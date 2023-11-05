@@ -9,7 +9,7 @@ description: "El pasado viernes 27 de Octubre, la Confederación Empresarial de
 draft: false
 fatured: true
 button_label: Read more
-button_link: /article#
+button_link: /article/2023-11-05-el-reto-de-la-inteligencia-artificial-para-las-empresas
 image: /images/upload/whatsapp-image-2023-10-27-at-10.27.09.jpeg
 ---
 Artificial Intelligence (AI) is already a reality that, as a disruptive technology, is transforming the business landscape and represents new opportunities for the growth and innovation of companies. That is why CEIM, together with the Madrid City Council, organized this informative conference, where AI experts shared their knowledge and experiences with Madrid companies, encouraging them to use this tool to improve their productivity and competitiveness.
