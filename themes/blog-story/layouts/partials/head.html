@@ -2,11 +2,22 @@
 	<title>{{ .Site.Title }}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="">
-	<meta name="author" content="">
+	{{ with .Description }}
+		<meta name="description" content="{{ . }}">
+	{{ else }}
+		<meta name="description" content="{{ $.Title }}">
+	{{ end }}
+	{{ with .Params.author }}
+		<meta name="author" content="{{ . }}">
+	{{ end }}
+
 	{{ if .Site.Params.favicon }}
 	{{ partial "favicon" }}
 	{{ end }}
+
+	<link rel="canonical" href="{{ .Permalink }}" />
+
+
 
 	<!-- CSS -->
 	{{ if .Site.IsServer }}

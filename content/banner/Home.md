@@ -7,5 +7,5 @@ subtitle: "Welcome to the place where conversations around <b>#WAIQ</b> happen"
 button_label : "Dive into #WAIQ conversations"
 button_link : "#first"
 image : "images/waiq-tm.png"
-summary: "Today, every company naturally integrates its strategies around web, mobile and cloud. It is inconceivable that they can be understood as separate disciplines. In a few years, history will repeat itself with three other disciplines: <strong>web3</strong>, AI and quantum. All three will feed back and complement each other and their convergence will multiply the opportunities for startups and corporates to develop new competitive advantages. Want to join us?"
+description: "Today, every company naturally integrates its strategies around web, mobile and cloud. It is inconceivable that they can be understood as separate disciplines. In a few years, history will repeat itself with three other disciplines: <strong>web3</strong>, AI and quantum. All three will feed back and complement each other and their convergence will multiply the opportunities for startups and corporates to develop new competitive advantages. Want to join us?"
 ---
