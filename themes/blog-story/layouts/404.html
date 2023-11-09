@@ -1,0 +1,7 @@
+{{ define "main" }}
+
+	{{ with .Site.GetPage "/banner/404.md" }}{{ .Render "summary" }}{{ end }}
+
+	{{ partial "footer" . }}
+
+{{ end }}
