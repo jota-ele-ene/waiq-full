@@ -1,0 +1,9 @@
+	{{ if .IsHome }}
+    {{ with .Site.GetPage "/banner/Home.md" }}{{ .Render "summary" }}{{ end }}
+  {{ end }}
+
+  <div id="navbar">
+    <a class="more" href="/topics/web3">WEB3</a>
+    <a class="more" href="/topics/ai">AI</a>
+    <a href="/topics/quantum">QUANTUM</a>
+  </div>

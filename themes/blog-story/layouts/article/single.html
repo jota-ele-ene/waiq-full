@@ -1,3 +1,29 @@
-<h1>{{ .Title }}
- {{ .Render "spotlight" }}
- {{ .Content }}
+{{ define "main" }}
+<section class="wrapper style1 align-left">
+  <div class="inner">
+    <header>
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+    </header>
+    <ul id="categories">
+      {{ range .Params.topics }}
+        <li><h4><a href="{{ "/topics/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></h4> </li>
+      {{ end }}
+    </ul>
+    {{ with .Params.image }}<span class="image fit"><img src='{{ . }}'></span>{{ end }}
+    {{ .Content }}
+  </div>
+</section>
+
+<section>
+<!-- Listing content with the same taxonomy term -->
+<h2>Other products that belong to this brand</h2>
+  {{ range where .Site.Pages ".Permalink" "!=" .Permalink }}
+    {{ if eq .Params.topics $.Params.topics }}
+      <li>
+        <a href="{{ .Permalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  {{ end }}
+</section>
+{{ end }}

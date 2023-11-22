@@ -138,3 +138,86 @@ footer p
 {
   letter-spacing: 6px;
 }
+
+body {
+  height: 100%;
+  font-family: 'tradegothiclt-bold', sans-serif;
+}
+
+span {
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Styling the menu */
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: rgb(2,21,71);
+  z-index: 10;
+  text-align: center;
+  padding: 6px;
+}
+
+/* Navbar links */
+#navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 20px;
+  line-height: normal;
+  letter-spacing: 8px;
+}
+
+#navbar a.more {
+  border-right: solid white 1px;
+}
+
+#navbar a:hover {
+  color: #9cecf5!important;
+}
+
+/* Page content */
+#wrapper {
+  padding-top: 40px;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#categories {
+  padding: 0!important;
+  margin-bottom: 6px!important;
+}
+
+#categories a{
+  color: rgb(0,168,188);
+  text-decoration: none;
+}
+
+#categories li {
+  display: inline-block;
+  padding-left:0!important;
+  padding-right:6px;
+}
+
+footer {
+  border-top: 1px solid rgba(0,0,0,0.2);
+}

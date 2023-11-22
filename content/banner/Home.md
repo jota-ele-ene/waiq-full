@@ -2,6 +2,7 @@
 title: "Hello world!"
 date: 2023-10-23T23:11:31.017Z
 draft: false
+h1: home
 style: "style1 orient-center content-align-center image-position-center fullscreen onload-image-fade-in onload-content-fade-right"
 subtitle: "Welcome to the place where conversations around <b>#WAIQ</b> happen"
 button_label : "Dive into #WAIQ conversations"

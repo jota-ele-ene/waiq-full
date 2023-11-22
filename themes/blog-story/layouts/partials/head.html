@@ -1,12 +1,18 @@
 <head>
-	<title>{{ .Site.Title }}</title>
+
+	{{ if .IsHome }}
+		{{ with .Site.GetPage "/banner/Home.md" }}
+			<title>{{ .Site.Title }}</title>
+			<meta name="description" content="{{ .Description }}">
+		{{ end }}
+	{{ else }}
+		<title>{{ with .Title }}{{ . }}{{ else }}Any page from {{ .Site.Title }}{{ end }}</title>
+		<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}Page at {{ .Permalink }}{{ end }}">
+	{{ end }}
+
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	{{ with .Description }}
-		<meta name="description" content="{{ . }}">
-	{{ else }}
-		<meta name="description" content="{{ $.Title }}">
-	{{ end }}
+
 	{{ with .Params.author }}
 		<meta name="author" content="{{ . }}">
 	{{ end }}
@@ -21,17 +27,17 @@
 
 	<!-- CSS -->
 	{{ if .Site.IsServer }}
-	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "outputStyle" "compressed" "enableSourceMap" false) }}
-	<link rel="stylesheet" href="{{ ($style).RelPermalink }}">
+	{{ $style := resources.Get "/sass/main.scss" | resources.ExecuteAsTemplate "/scss/main.scss" . | toCSS (dict "targetPath" "/css/main.css" "outputStyle" "compressed" "enableSourceMap" false) }}
+	<link rel="stylesheet" href="{{ ($style).RelPermalink | absURL }}">
 	{{ else }}
-	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "enableSourceMap" false) }}
-	<link rel="stylesheet" href="{{ ($style | minify).RelPermalink }}">
+	{{ $style := resources.Get "/sass/main.scss" | resources.ExecuteAsTemplate "/scss/main.scss" . | toCSS (dict "targetPath" "/css/main.css" "enableSourceMap" false) }}
+	<link rel="stylesheet" href="{{ ($style | minify).RelPermalink | absURL }}">
 	{{ end }}
 	{{ if .Site.IsServer }}
-	{{ $noscript := resources.Get "sass/noscript.scss" | resources.ExecuteAsTemplate "noscript.scss" . | toCSS (dict "targetPath" "css/noscript.css" "enableSourceMap" false) }}
-	<noscript><link rel="stylesheet" href="{{ ($noscript).RelPermalink }}" /></noscript>
+	{{ $noscript := resources.Get "sass/noscript.scss" | resources.ExecuteAsTemplate "noscript.scss" . | toCSS (dict "targetPath" "/css/noscript.css" "enableSourceMap" false) }}
+	<noscript><link rel="stylesheet" href="{{ ($noscript).RelPermalink | absURL }}" /></noscript>
 	{{ else }}
-	{{ $noscript := resources.Get "sass/noscript.scss" | resources.ExecuteAsTemplate "noscript.scss" . | toCSS (dict "targetPath" "css/noscript.css" "enableSourceMap" false) }}
+	{{ $noscript := resources.Get "sass/noscript.scss" | resources.ExecuteAsTemplate "noscript.scss" . | toCSS (dict "targetPath" "/css/noscript.css" "enableSourceMap" false) }}
 	<noscript><link rel="stylesheet" href="{{ . | absURL }}" /></noscript>
 	{{end}}
 

@@ -5,7 +5,7 @@ overflow: clip;
 contain: content;
  ">
     <div class="content">
-        {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+        {{ with .Title }}<h1 class="{{ with $.Params.h1 }}{{ . }}{{ end }}">{{ . }}</h1>{{ end }}
         {{ with .Params.Subtitle }}<p class="major">{{ . | safeHTML }}</p>{{ end }}
         {{ with .Params.Description }}<p>{{ . | safeHTML}}</p>{{ end }}
         <ul class="actions stacked">
@@ -13,6 +13,6 @@ contain: content;
         </ul>
     </div>
     {{ with .Params.image }}<div class="image">
-      <img src="{{ . }}" alt="" />
+      <img src="{{ . | absURL}}" alt="" />
     </div>{{end}}
 </section>

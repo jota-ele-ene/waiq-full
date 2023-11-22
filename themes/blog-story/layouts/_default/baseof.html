@@ -11,11 +11,15 @@
 
 	<body class="is-preload">
 
+		{{ partial "menu" . }}
+
 		<!-- Wrapper -->
 		<div id="wrapper" class="divided">
             {{- block "main" . }}{{- end }}
 		<!-- Wrapper -->
 		</div>
+
+		{{ partial "footer" . }}
 
 		{{ partial "scripts" . }}
 

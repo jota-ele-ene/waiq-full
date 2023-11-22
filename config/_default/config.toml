@@ -3,6 +3,8 @@
 ## -----------------------------------------------
 
 theme = "blog-story"
+languageCode = 'en-us'
+title = 'Welcome to this #WAIQ Age'
 
 ## -----------------------------------------------
 ## Publish
@@ -34,6 +36,13 @@ disableKinds = ["section"]
 #googleAnalytics: G-MEASUREMENT_ID
 #swetrixAnalytics = "3UYKaHJP56by"
 
+## -----------------------------------------------
+## Taxonomies
+## -----------------------------------------------
+
+[taxonomies]
+  topic = "topics"
+#category = "categories"
 
 ## -----------------------------------------------
 ## Site Parameters
@@ -50,4 +59,5 @@ disableKinds = ["section"]
   #telegram = "https://telegram.org"
 
 [Params.asset]
-additional_css = ["css/waiq.css"]
+additional_css = ["css/fontawesome-all.min.css","css/waiq.css"]
+additional_js = ["js/fontawesome-all.min.js","js/waiq.js"]

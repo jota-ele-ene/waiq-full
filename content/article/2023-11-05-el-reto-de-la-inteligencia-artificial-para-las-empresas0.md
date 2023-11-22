@@ -1,18 +1,13 @@
 ---
-title: The challenge of AI for companies
+title: ESTE ES OTRO RETO PARA LAS EMPRESAS
 date: 2023-11-05T22:22:29.763Z
-description: "El pasado viernes 27 de Octubre, la Confederación Empresarial de
-  Madrid-CEOE (CEIM) organizó una jornada para debatir sobre el impacto de la
-  Inteligencia Artificial en las empresas, y varios expertos debatieron sobre
-  las oportunidades que la inminente regulación puede ofrecer para el
-  crecimiento y la innovación de las empresas. "
+description: "Lorem ipsum reto "
 topics: ["AI","web3","vr"]
 draft: false
 featured: true
 weigth: 20
 button_label: Read more
-button_link: /article/2023-11-05-el-reto-de-la-inteligencia-artificial-para-las-empresas
-image: /images/upload/whatsapp-image-2023-10-27-at-10.27.09.jpeg
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mona_Lisa-restored.jpg/1200px-Mona_Lisa-restored.jpg
 ---
 Artificial Intelligence (AI) is already a reality that, as a disruptive technology, is transforming the business landscape and represents new opportunities for the growth and innovation of companies. That is why CEIM, together with the Madrid City Council, organized this informative conference, where AI experts shared their knowledge and experiences with Madrid companies, encouraging them to use this tool to improve their productivity and competitiveness.
 

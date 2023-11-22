@@ -11,6 +11,6 @@
 </footer>
 
 <!-- FontAwesome JS -->
-{{ range .Site.Params.asset.fontawesome_js -}}
+{{ range .Site.Params.asset.additional_js -}}
     <script type="text/javascript" src="{{ . | absURL }}"></script>
 {{- end }}
