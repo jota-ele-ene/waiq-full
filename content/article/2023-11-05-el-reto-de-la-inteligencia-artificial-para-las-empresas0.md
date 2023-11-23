@@ -1,15 +1,22 @@
 ---
-title: ESTE ES OTRO RETO PARA LAS EMPRESAS
-date: 2023-11-05T22:22:29.763Z
-description: "Lorem ipsum reto "
-topics: ["AI","web3","vr"]
-draft: false
-featured: true
 weigth: 20
+title: "4th European AI Alliance Assembly "
+date: 2023-11-23T00:02:06.261Z
+draft: false
+topics:
+  - AI
+  - web3
+  - vr
+description: "The European AI Alliance Assembly is the flagship event bringing
+  together policymakers and stakeholders to contribute to shaping Europe’s
+  Artificial Intelligence policy. 2023's edition marked another important
+  milestone in the implementation of the European AI Strategy with the AI Act
+  heading towards adoption while the updated Coordinated Plan on AI is counting
+  two years of implementation. "
+fatured: true
 button_label: Read more
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mona_Lisa-restored.jpg/1200px-Mona_Lisa-restored.jpg
+button_link: "#"
+featured: true
+image: https://digital-strategy.ec.europa.eu/sites/default/files/styles/large/public/newsroom/items/EUAI23_VI_k6qydf87ApYuf5pwHIXlYdHDV40_134428.jpg?itok=PiMd-xFq
 ---
-Artificial Intelligence (AI) is already a reality that, as a disruptive technology, is transforming the business landscape and represents new opportunities for the growth and innovation of companies. That is why CEIM, together with the Madrid City Council, organized this informative conference, where AI experts shared their knowledge and experiences with Madrid companies, encouraging them to use this tool to improve their productivity and competitiveness.
-
-{{< image style="left" alt="Begoña Glez. Otero" url="https://media.licdn.com/dms/image/C4D03AQE-_a613D3xwg/profile-displayphoto-shrink_100_100/0/1567434589831?e=1704931200&v=beta&t=K4UHQPj9fD6-ZKDS1ATsazx2X2afJVftykyW4aF3QXU">}} First, [Begoña González Otero](https://www.linkedin.com/in/begotero/), senior researcher at the Max Planck Institute, reviewed in her presentation the context and trends of artificial intelligence in business, clarifying the terminology and the actual point of maturity of the technology, its applications and implications, and introducing the key issues that will be addressed by the future AI regulation (AI Act) driven by the European Commission and based on the different levels of risk of AI adoption in different use cases.
-Next, a couple of round tables discussed first about regulation, its potential impact and scope on issues such as innovation or sustainability, and finally presented several real use cases where Artificial Intelligence already represents a competitive advantage for companies.
+The 4th Assembly of the European AI Alliance: Leading Trustworthy AI Globally, was held in Madrid on November 16 and 17. A reference event, organized by the Ministry of Economy, the Secretary of State for Digitalization and Artificial Intelligence and the European Commission, which brings together policy makers and stakeholders to share ideas and continue shaping the European policy of Artificial Intelligence.
