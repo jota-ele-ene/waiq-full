@@ -44,6 +44,27 @@ disableKinds = ["section"]
   topic = "topics"
 #category = "categories"
 
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+
+  [[related.indices]]
+    name = "title"
+    weight = 30
+
+  [[related.indices]]
+    name = "description"
+    weight = 30
+
+  [[related.indices]]
+    name = "topics"
+    weight = 30
+
+  [[related.indices]]
+    name = "date"
+    weight = 10
+
 ## -----------------------------------------------
 ## Site Parameters
 ## -----------------------------------------------

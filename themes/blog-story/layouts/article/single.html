@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="wrapper style1 align-left">
+<section class="wrapper single style1 align-left">
   <div class="inner">
     <header>
         <h1>{{ .Title }}</h1>
@@ -15,15 +15,6 @@
   </div>
 </section>
 
-<section>
-<!-- Listing content with the same taxonomy term -->
-<h2>Other products that belong to this brand</h2>
-  {{ range where .Site.Pages ".Permalink" "!=" .Permalink }}
-    {{ if eq .Params.topics $.Params.topics }}
-      <li>
-        <a href="{{ .Permalink}}">{{ .Title }}</a>
-      </li>
-    {{ end }}
-  {{ end }}
-</section>
+{{ partial "related" . }}
+
 {{ end }}

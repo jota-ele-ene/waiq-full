@@ -74,12 +74,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media screen and (min-width: 736px){
 .spotlight.style1:nth-child(even) {
   -moz-flex-direction: row-reverse;
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 };
+}
 
 .gallery.style2 article .caption>* {
     max-width: 100%;
@@ -157,6 +159,10 @@ span {
 /* Styling the menu */
 
 /* Style the navbar */
+.single {
+    margin-top: 35px;
+}
+
 #navbar {
   overflow: hidden;
   background-color: rgb(2,21,71);
@@ -185,9 +191,9 @@ span {
 }
 
 /* Page content */
-#wrapper {
+/*#wrapper {
   padding-top: 40px;
-}
+}*/
 
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */

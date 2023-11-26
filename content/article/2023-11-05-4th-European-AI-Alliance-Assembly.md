@@ -3,10 +3,7 @@ weigth: 20
 title: "4th European AI Alliance Assembly "
 date: 2023-11-23T00:02:06.261Z
 draft: false
-topics:
-  - AI
-  - web3
-  - vr
+topics: ["AI","web3","vr"]
 description: "The European AI Alliance Assembly is the flagship event bringing
   together policymakers and stakeholders to contribute to shaping Europe’s
   Artificial Intelligence policy. 2023's edition marked another important
@@ -15,7 +12,6 @@ description: "The European AI Alliance Assembly is the flagship event bringing
   two years of implementation. "
 fatured: true
 button_label: Read more
-button_link: "#"
 featured: true
 image: https://digital-strategy.ec.europa.eu/sites/default/files/styles/large/public/newsroom/items/EUAI23_VI_k6qydf87ApYuf5pwHIXlYdHDV40_134428.jpg?itok=PiMd-xFq
 ---

@@ -46,5 +46,3 @@ swetrixAnalytics = "3UYKaHJP56by"
 [Params.social]
 
 [Params.asset]
-additional_css = ["css/fontawesome-all.min.css","css/waiq.css"]
-  additional_js = ["js/fontawesome-all.min.js"]
