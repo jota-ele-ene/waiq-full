@@ -1,4 +1,7 @@
-if( document.querySelector(".home") > 0) {
+console.log( document.querySelector(".home"))
+
+
+if( document.querySelector(".home") ) {
 
   document.addEventListener('DOMContentLoaded',function(event){
     // array with texts to type in typewriter

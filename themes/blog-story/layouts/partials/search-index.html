@@ -9,6 +9,7 @@
           "title": "{{ .Title  }}",
           //"tags": [{{ range .Params.Tags }}"{{ . }}",{{ end }}],
           "topics": [{{ range .Params.topics }}"{{ . }}",{{ end }}],
+          "areas": [{{ range .Params.areas }}"{{ . }}",{{ end }}],
           "content": {{ .Content | plainify }}, // Strip out HTML tags
           "url": "{{ .Permalink }}"
       },

@@ -213,9 +213,19 @@ span {
   padding-top: 60px;
 }
 
+
+.tags {
+    display: inline-block;
+    width: 100%;
+}
+
 #categories {
   padding: 0!important;
   margin-bottom: 6px!important;
+}
+
+#categories h4 {
+  font-size: smaller;
 }
 
 #categories a{
@@ -224,6 +234,20 @@ span {
       color: white;
       padding: 2px 10px;
       border-radius: 8px;
+}
+
+#categories.topics {
+  float: inline-start
+}
+
+#categories.areas {
+  float: inline-end
+}
+
+#categories h4.areas a{
+    color: rgb(0,168,188);
+    background: white;
+    border: rgb(0,168,188) solid 1px;
 }
 
 #categories li {

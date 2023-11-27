@@ -34,7 +34,16 @@ collections:
       - {
           label: 'Topics',
           name: 'topics',
-          widget: 'list'
+          widget: 'list',
+          options: ['web3', 'ai', 'quantum'],
+          multiple: true,
+        }
+      - {
+          label: 'Areas',
+          name: 'areas',
+          widget: 'list',
+          options: ['legal', 'ethical', 'technology', 'innovation', 'business'],
+          multiple: true,
         }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'text' }

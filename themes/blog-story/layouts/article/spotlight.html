@@ -2,6 +2,16 @@
         <section class="spotlight style1 content-align-left image-position-center onscroll-image-fade-in" id="first">
             <div class="content">
                 <h2>{{ .Title }}</h2>
+                <div class="tags">
+                  <ul id="categories">
+                    {{ range .Params.topics }}
+                      <li><h4 class="topics"><a href="{{ "/topics/" | relLangURL }}{{ lower . | urlize }}">{{ . }}</a></h4> </li>
+                    {{ end }}
+                    {{ range .Params.areas }}
+                      <li><h4 class="areas"><a href="{{ "/areas/" | relLangURL }}{{ lower . | urlize }}">{{ . }}</a></h4> </li>
+                    {{ end }}
+                  </ul>
+                </div>
                 {{ with .Description }}<p>{{ . | safeHTML }}</p>{{ end }}
                 <ul class="actions stacked">
                     <li><a href="{{ .Permalink }}" class="button">{{ .Params.button_label }}</a></li>

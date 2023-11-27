@@ -4,6 +4,7 @@ title: "4th European AI Alliance Assembly "
 date: 2023-11-23T00:02:06.261Z
 draft: false
 topics: ["AI","web3","vr"]
+areas: ["legal","ethical"]
 description: "The European AI Alliance Assembly is the flagship event bringing
   together policymakers and stakeholders to contribute to shaping Europe’s
   Artificial Intelligence policy. 2023's edition marked another important

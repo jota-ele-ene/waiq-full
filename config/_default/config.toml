@@ -41,7 +41,8 @@ disableKinds = ["section"]
 ## -----------------------------------------------
 
 [taxonomies]
-  topic = "topics"
+topic = "topics"
+area = "areas"
 #category = "categories"
 
 [related]
@@ -58,12 +59,12 @@ disableKinds = ["section"]
     weight = 30
 
   [[related.indices]]
-    name = "topics"
-    weight = 30
+    name = "areas"
+    weight = 10
 
   [[related.indices]]
-    name = "date"
-    weight = 10
+    name = "topics"
+    weight = 30
 
 ## -----------------------------------------------
 ## Site Parameters

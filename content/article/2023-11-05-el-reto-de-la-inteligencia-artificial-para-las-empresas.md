@@ -3,6 +3,7 @@ title: The challenge of AI for companies
 date: 2023-11-05T22:22:29.763Z
 description: "Last Friday, October 27, the Madrid-CEOE Business Confederation (CEIM) organized a conference to discuss the impact of Artificial Intelligence on companies, and several experts debated the opportunities that the imminent regulation may offer for the growth and innovation of companies. "
 topics: ["AI"]
+areas: ["legal","business"]
 draft: false
 featured: true
 weigth: 20

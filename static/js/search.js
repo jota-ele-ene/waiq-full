@@ -9,7 +9,10 @@ function displayResults (results, store) {
       resultList += '<li><a href="' + item.url + '">' + item.title + '</a>'
       resultList += '<ul id="categories">'
       for (const m in item.topics) {
-          resultList += '<li><h4><a href="/topics/' + item.topics[m] + '">' + item.topics[m] + '</a></h4> </li>'
+          resultList += '<li><h4><a href="/topics/' + item.topics[m].toLowerCase() + '">' + item.topics[m] + '</a></h4> </li>'
+      }
+      for (const m in item.areas) {
+          resultList += '<li><h4 class="areas"><a href="/areas/' + item.areas[m].toLowerCase() + '">' + item.areas[m] + '</a></h4> </li>'
       }
       resultList += '</ul></li>'
       //resultList += '<p>' + item.content.substring(0, 150) + '...</p></li>'
@@ -38,6 +41,9 @@ function search () {
       this.field('topics', {
         boost: 20
       })
+      this.field('areas', {
+        boost: 20
+      })
       this.field('content', {
         boost: 10
       })
@@ -47,6 +53,7 @@ function search () {
           id: key,
           title: window.store[key].title,
           topics: window.store[key].topics,
+          areas: window.store[key].areas,
           content: window.store[key].content
         })
       }

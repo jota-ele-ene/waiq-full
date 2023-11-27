@@ -3,9 +3,9 @@
   {{ end }}
 
   <div id="navbar">
-    <a class="more" href="/topics/web3">WEB3</a>
-    <a class="more" href="/topics/ai">AI</a>
-    <a href="/topics/quantum">QUANTUM</a>
+    <a class='more {{ partial "active-menu.html" (dict "context" . "topic" "web3") }}' href="/topics/web3">WEB3</a>
+    <a class='more {{ partial "active-menu.html" (dict "context" . "topic" "AI") }}' href="/topics/ai">AI</a>
+    <a class='{{ partial "active-menu.html" (dict "context" . "topic" "Quantum") }}' href="/topics/quantum">QUANTUM</a>
 		<a href="#M" class="search-icon icon solid fa-search" onClick="displayModal()"></a>
   </div>
 
@@ -21,7 +21,6 @@
 
 	<script>
 	function displayModal() {
-		alert("disp")
 	  var element = document.getElementById("M");
 	  element.classList.toggle("modal-inactive");
 	}
