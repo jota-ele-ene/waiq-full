@@ -6,4 +6,23 @@
     <a class="more" href="/topics/web3">WEB3</a>
     <a class="more" href="/topics/ai">AI</a>
     <a href="/topics/quantum">QUANTUM</a>
+		<a href="#M" class="search-icon icon solid fa-search" onClick="displayModal()"></a>
   </div>
+
+	<div id="M" class="modal">
+		<div class="modal-content">
+			<a class="closebutton" href="#">&times;</a>
+			{{ partial "search" . }}
+			<ul class="alt" id="results">
+			</ul>
+ 			</div>
+		<a href="#" class="closeoverlay" onClick="displayModal()"></a>
+	</div>
+
+	<script>
+	function displayModal() {
+		alert("disp")
+	  var element = document.getElementById("M");
+	  element.classList.toggle("modal-inactive");
+	}
+	</script>
