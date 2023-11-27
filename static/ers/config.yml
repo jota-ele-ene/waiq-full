@@ -27,10 +27,11 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
+    sortable_fields: ['commit_date', 'title']
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Topics', name: 'topics', widget: 'list' }
+      - { label: 'Topics', name: 'topics', widget: 'list', allow_add: 'true' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: 'false' }
