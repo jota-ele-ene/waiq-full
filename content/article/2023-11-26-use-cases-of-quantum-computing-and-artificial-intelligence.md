@@ -1,5 +1,9 @@
 ---
 title: "Use Cases of Quantum Computing and Artificial Intelligence "
+topics:
+  - quantum
+draft: "false"
+button_link: https://images.unsplash.com/photo-1666112835145-d79fc3f2e008?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 date: 2023-11-26T23:55:39.775Z
 description: Quantum computing and artificial intelligence are two fields that
   can benefit from each other in multiple ways. Quantum computing can provide
@@ -8,10 +12,8 @@ description: Quantum computing and artificial intelligence are two fields that
   computing with optimization, error correction, and interpretation of quantum
   data. Some of the use cases of quantum computing and artificial intelligence
   are listed here.
-draft: "false"
 fatured: "true"
 button_label: Read more
-button_link: https://images.unsplash.com/photo-1666112835145-d79fc3f2e008?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 image: https://images.unsplash.com/photo-1666112835145-d79fc3f2e008?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 <h3>Quantum optimization</h3>
