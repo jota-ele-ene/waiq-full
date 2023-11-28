@@ -1,5 +1,5 @@
 ---
-title: "Use Cases of Quantum Computing and Web 3.0 "
+title: Use Cases of Quantum Computing and Web3
 topics:
   - web3
 areas:
