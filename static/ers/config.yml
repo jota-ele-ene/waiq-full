@@ -34,14 +34,14 @@ collections:
       - {
           label: 'Topics',
           name: 'topics',
-          widget: 'list',
+          widget: 'select',
           options: ['web3', 'ai', 'quantum'],
           multiple: true,
         }
       - {
           label: 'Areas',
           name: 'areas',
-          widget: 'list',
+          widget: 'select',
           options: ['legal', 'ethical', 'technology', 'innovation', 'business'],
           multiple: true,
         }
