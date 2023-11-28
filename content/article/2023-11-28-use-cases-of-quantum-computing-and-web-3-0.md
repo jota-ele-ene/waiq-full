@@ -2,8 +2,11 @@
 title: Use Cases of Quantum Computing and Web3
 topics:
   - web3
+  - quantum
 areas:
-  - innovation;business
+  - technology
+  - innovation
+  - business
 date: 2023-11-27T23:56:37.526Z
 description: "Quantum computing and web3 are two fields that can benefit from
   each other in various ways. Quantum computing can provide web3 with more
