@@ -34,9 +34,36 @@ Several quantum firms have gone public or announced plans this year, tapping bro
 * **Post-Quantum Security and Cryptography**: Firms focusing on hardware and software solutions for quantum-resistant encryption, such as SEALSQ and companies developing post-quantum cryptography standards, are positioning themselves as essential players in the security infrastructure for the quantum era.​
 * **Quantum Sensing and Measurement Technologies**: Several companies developing quantum sensors—leveraging neutral atoms, superconductors, or photonics—are parallelly gaining traction, with applications in navigation, medical imaging, and environmental monitoring increasingly commercialized.​
 
+## Summary Table of Quantum Companies
+
+| Company        | Country     | Founded | IPO/Funding Date | Age at IPO | Valuation (B USD) | Technology                 |
+| -------------- | ----------- | ------- | ---------------- | ---------- | ----------------- | --------------------------|
+| Infleqtion     | USA         | 2011    | Sept 2025        | 14         | 1.8               | Neutral-Atom               |
+| Xanadu         | Canada      | 2016    | Nov 2025         | 9          | 3.6               | Photonic                   |
+| PsiQuantum     | USA         | 2016    | Sept 2025*       | 9          | 7.0               | Photonic                   |
+| Quantinuum     | USA         | 2021    | June 2021        | 0          | 4.0               | Trapped-Ion                |
+| IonQ           | USA         | 2015    | Oct 2021         | 6          | 1.5               | Trapped-Ion                |
+| Rigetti        | USA         | 2013    | March 2022       | 9          | 1.5               | Superconducting            |
+| D-Wave         | Canada      | 1999    | Aug 2022         | 23         | 1.6               | Quantum Annealing          |
+| Arqit          | UK          | 2017    | Sept 2021        | 4          | 1.0               | Post-Quantum Cryptography  |
+| SEALSQ         | Switzerland | 2018    | June 2023        | 5          | 0.3               | Post-Quantum Cryptography  |
+| Atom Computing | USA         | 2018    | 2024*            | 6          | 0.3               | Neutral-Atom               |
+
+_\* Private funding round_
+
 ## Thematic Market Trends in 2025
 
-Investor interest and capital inflows have surged, with SPAC transactions facilitating public market access. Strategic alliances with tech giants and government funding accelerate the transition from the experimental stage to practical quantum computing and sensing applications. Emphasis is placed on scalable fault-tolerant architectures and niche applications like quantum-safe cybersecurity and quantum-enhanced measurement technologies.
+Investor interest and capital inflows have surged, with SPAC transactions facilitating public market access. Strategic alliances with tech giants and government funding accelerate the transition from the experimental stage to practical quantum computing and sensing applications. Emphasis is placed on scalable fault-tolerant architectures and niche applications like quantum-safe cybersecurity and quantum-enhanced measurement technologies. We can highlight some major trends:
+
+- Diverse quantum technologies simultaneously mature, providing multiple pathways to quantum advantage.
+- Photonic companies lead valuations, signaling investor confidence in scalability.
+- Established companies like D-Wave and Rigetti demonstrate significant longevity and maturation.
+- Increased SPAC activity and funding rounds accelerate market entries.
+- Government and corporate partnerships remain critical in sustaining R&D.
+- Fault tolerance, error correction, and quantum-AI synergy will dominate technology development.
+- Future IPOs, particularly from European firms like PASQAL, may broaden public market exposure.
+
+This overview highlights 2025 as a defining year for quantum commercialization, bridging scientific innovation with financial markets through diverse technology platforms that together shape the future of computing.
 
 ## Outlook for the Next Months and Beyond
 
@@ -45,3 +72,8 @@ The ongoing quantum IPO wave is expected to continue, with anticipated listings 
 Quantum companies with sustainable cash runway, credible performance milestones (e.g., error correction, qubit scaling), and growing commercial traction will attract more capital, fostering more stable valuations amid the current volatility of speculative pure plays. Governments and industries adopting quantum technologies for cybersecurity, drug discovery, and advanced materials will be key demand drivers.
 
 This year has thus crystallized several quantum sectors poised to underpin the next technology revolution, reflecting both technology diversity and the transition from experimental to applied quantum science.
+
+
+
+
+---
