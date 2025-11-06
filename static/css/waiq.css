@@ -195,6 +195,11 @@ span {
   color: #9cecf5!important;
 }
 
+.home-icon {
+    float: inline-start;
+    margin: 0.2em;
+    padding: 0;
+}
 /* Page content */
 /*#wrapper {
   padding-top: 40px;
