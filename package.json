@@ -3,5 +3,11 @@
     "decap-cms-app": "^3.0.12",
     "lunr": "^2.3.9",
     "netlify-identity-widget": "^1.9.2"
+  },
+  "scripts": {
+    "build": "hugo"
+  },
+  "devDependencies": {
+    "hugo-bin": "^0.111.3"
   }
 }
