@@ -28,6 +28,7 @@ publishDir = "public"
 
 #disableKinds = ["taxonomy", "section"]
 disableKinds = ["section"]
+ignoreLogs = ['warning-goldmark-raw-html']
 
 ## -----------------------------------------------
 ## Analytics support
