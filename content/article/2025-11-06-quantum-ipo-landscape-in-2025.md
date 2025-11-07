@@ -73,22 +73,7 @@ Quantum companies with sustainable cash runway, credible performance milestones 
 
 This year has thus crystallized several quantum sectors poised to underpin the next technology revolution, reflecting both technology diversity and the transition from experimental to applied quantum science.
 
-## References
 
-- ["Public Quantum Stocks 2025: From Pure Plays to Tech Giants," The Quantum Insider, 2025-10-19.](https://thequantuminsider.com/2025/10/20/public-quantum-stocks-2025-from-pure-plays-to-tech-giants/)
-- ["Quantum Computing Companies in 2025 (76 Major Players)," The Quantum Insider, 2025-09-22.](https://thequantuminsider.com/2025/09/23/top-quantum-computing-companies/)
-- ["8 Best Quantum Computing Stocks for 2025," U.S. News Investing, 2025-08-22.](https://money.usnews.com/investing/articles/best-quantum-computing-stocks-to-buy)
-- ["3 Top Quantum Computing Stocks to Buy in 2025," Nasdaq, 2025-10-17.](https://www.nasdaq.com/articles/3-top-quantum-computing-stocks-buy-2025-1)
-- ["Infleqtion to go public in SPAC deal valuing quantum computing firm $1.8 billion," Reuters, 2025-09-08.](https://www.reuters.com/legal/transactional/infleqtion-go-public-spac-deal-valuing-quantum-computing-firm-18-billion-2025-09-08/)
-- ["Xanadu strikes SPAC deal, plans to go public," The Globe and Mail, 2025-11-03.](https://www.theglobeandmail.com/business/article-xanadu-quantum-technologies-public-tsx-nasdaq-spac-crane-harbor/)
-- ["Futuristic quantum computing stocks take speculators on roller coaster ride," Reuters, 2025-11-05.](https://www.reuters.com/business/finance/futuristic-quantum-computing-stocks-take-speculators-roller-coaster-ride-2025-11-05/)
-- ["8 Quantum Computing Stocks to Watch and Invest in 2025," BlueQubit, 2024-12-31.](https://www.bluequbit.io/quantum-computing-stocks) [web:11]
-- ["Infleqtion and Churchill Capital Corp X Announce Confidential Submission," Business Wire, 2025-11-04.](https://www.businesswire.com/news/home/20251104420690/en/Infleqtion-and-Churchill-Capital-Corp-X-Announce-Confidential-Submission-of-Draft-Registration-Statement-on-Form-S-4-in-Connection-with-Proposed-Business-Combination)
-- ["3 Top Quantum Computing Stocks to Buy in 2025," Yahoo Finance, 2025-10-17.](https://finance.yahoo.com/news/3-top-quantum-computing-stocks-120000997.html)
-- ["Quantum Computing Industry Trends 2025: A Year of Breakthrough ...," SpinQ, 2025-10-30.](https://www.spinquanta.com/news-detail/quantum-computing-industry-trends-2025-breakthrough-milestones-commercial-transition) ]
-- ["The Year of Quantum: From concept to reality in 2025," McKinsey, 2025-06-22.](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-year-of-quantum-from-concept-to-reality-in-2025)
-- ["Upcoming Quantum IPOs to Watch," SpinQ, 2025-10-23.](https://www.spinquanta.com/news-detail/upcoming-quantum-ipos-to-watch)
-- ["The Global Quantum Technology Industry 2025 - Future Markets, Inc," 2025-06-18.](https://www.futuremarketsinc.com/the-global-quantum-technology-industry-2025-technologies-markets-investments-and-opportunities/)
-- ["Meet the companies racing to build quantum chips," TechCrunch, 2025-05-04.](https://techcrunch.com/2025/05/05/meet-the-companies-racing-to-build-quantum-chips/) [
+
 
 ---
