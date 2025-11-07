@@ -1,10 +1,10 @@
 {{ define "main" }}
 
-	{{ range where .Site.Pages.ByWeight "Section" "article" }}
-     {{ if .Params.featured }}
-           {{ .Render "spotlight" }}
-     {{ end }}
-  {{ end }}
+	{{ range sort (where .Site.Pages "Section" "article") ".Weight" "desc" ".Date" }}
+	  {{ if .Params.featured }}
+	    {{ .Render "spotlight" }}
+	  {{ end }}
+	{{ end }}
 
 	{{ partial "galeria-waiqers.html" . }}
 
