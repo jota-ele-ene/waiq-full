@@ -46,15 +46,3 @@ swetrixAnalytics = "3UYKaHJP56by"
 [Params.social]
 
 [Params.asset]
-
-## -----------------------------------------------
-## Site Parameters
-## -----------------------------------------------
-
-[build]
-  publish = "public"
-  command = "hugo --gc --minify"
-
-[build.environment]
-  HUGO_VERSION = "0.134.2"
-  HUGO_ENV = "production"
