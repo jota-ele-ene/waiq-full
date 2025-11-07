@@ -2,86 +2,89 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://waiq-full.netlify.app/areas/</loc>
+    <loc>http://localhost:1313/areas/</loc>
     <lastmod>2025-11-06T22:40:00+01:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/areas/business/</loc>
+    <loc>http://localhost:1313/areas/business/</loc>
     <lastmod>2025-11-06T22:40:00+01:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/topics/quantum/</loc>
+    <loc>http://localhost:1313/topics/quantum/</loc>
     <lastmod>2025-11-06T22:40:00+01:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/article/2025-11-06-quantum-ipo-landscape-in-2025/</loc>
+    <loc>http://localhost:1313/article/2025-11-06-quantum-ipo-landscape-in-2025/</loc>
     <lastmod>2025-11-06T22:40:00+01:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/article/2025-11-06-informe-cuantica/</loc>
+    <loc>http://localhost:1313/article/2025-11-06-informe-cuantica/</loc>
     <lastmod>2025-11-06T22:40:00+01:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/topics/</loc>
+    <loc>http://localhost:1313/topics/</loc>
     <lastmod>2025-11-06T22:40:00+01:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-11-06T22:40:00+01:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/topics/ai/</loc>
+    <loc>http://localhost:1313/topics/ai/</loc>
     <lastmod>2023-11-28T00:08:35+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/areas/innovation/</loc>
+    <loc>http://localhost:1313/areas/innovation/</loc>
     <lastmod>2023-11-28T00:08:35+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/article/2023-11-28-waiq-complete-use-cases-involving-the-three-technologies/</loc>
+    <loc>http://localhost:1313/article/2023-11-28-waiq-complete-use-cases-involving-the-three-technologies/</loc>
     <lastmod>2023-11-28T00:08:35+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/topics/web3/</loc>
+    <loc>http://localhost:1313/topics/web3/</loc>
     <lastmod>2023-11-28T00:08:35+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/areas/technology/</loc>
+    <loc>http://localhost:1313/areas/technology/</loc>
     <lastmod>2023-11-27T23:56:37+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/article/2023-11-28-use-cases-of-quantum-computing-and-web-3-0/</loc>
+    <loc>http://localhost:1313/article/2023-11-28-use-cases-of-quantum-computing-and-web-3-0/</loc>
     <lastmod>2023-11-27T23:56:37+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/article/2023-11-26-use-cases-of-quantum-computing-and-artificial-intelligence/</loc>
+    <loc>http://localhost:1313/article/2023-11-26-use-cases-of-quantum-computing-and-artificial-intelligence/</loc>
     <lastmod>2023-11-26T23:55:39+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/picture/2023-11-05-patricia-ramos/</loc>
+    <loc>http://localhost:1313/picture/2023-11-05-patricia-ramos/</loc>
     <lastmod>2023-11-05T00:59:06+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/banner/whoweare/</loc>
+    <loc>http://localhost:1313/banner/whoweare/</loc>
     <lastmod>2023-10-23T23:11:31+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/picture/ck/</loc>
+    <loc>http://localhost:1313/picture/ck/</loc>
     <lastmod>2023-10-23T23:11:31+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/picture/ecg/</loc>
+    <loc>http://localhost:1313/picture/ecg/</loc>
     <lastmod>2023-10-23T23:11:31+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/banner/home/</loc>
+    <loc>http://localhost:1313/banner/home/</loc>
     <lastmod>2023-10-23T23:11:31+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/picture/jlar/</loc>
+    <loc>http://localhost:1313/picture/jlar/</loc>
     <lastmod>2023-10-23T23:11:31+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/picture/jln/</loc>
+    <loc>http://localhost:1313/picture/jln/</loc>
     <lastmod>2023-10-23T23:11:31+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/picture/livdo/</loc>
+    <loc>http://localhost:1313/picture/livdo/</loc>
     <lastmod>2023-10-23T23:11:31+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/picture/rv/</loc>
+    <loc>http://localhost:1313/picture/rv/</loc>
     <lastmod>2023-10-23T23:11:31+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/banner/404/</loc>
+    <loc>http://localhost:1313/banner/404/</loc>
     <lastmod>2023-10-23T23:11:31+00:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/article/2025-11-06-quantum-companies-going-public-in-2025/</loc>
+    <loc>http://localhost:1313/elements/</loc>
+    <lastmod>2023-10-24T00:50:58+02:00</lastmod>
   </url><url>
-    <loc>https://waiq-full.netlify.app/areas/ethical/</loc>
+    <loc>http://localhost:1313/article/2025-11-06-quantum-companies-going-public-in-2025/</loc>
   </url><url>
-    <loc>https://waiq-full.netlify.app/areas/ip/</loc>
+    <loc>http://localhost:1313/areas/ethical/</loc>
   </url><url>
-    <loc>https://waiq-full.netlify.app/areas/legal/</loc>
+    <loc>http://localhost:1313/areas/ip/</loc>
   </url><url>
-    <loc>https://waiq-full.netlify.app/404/</loc>
+    <loc>http://localhost:1313/areas/legal/</loc>
+  </url><url>
+    <loc>http://localhost:1313/404/</loc>
   </url>
 </urlset>
