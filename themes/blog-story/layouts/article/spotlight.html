@@ -1,7 +1,7 @@
 <!-- Spotlight -->
         <section class="spotlight style1 content-align-left image-position-center onscroll-image-fade-in" id="first">
             <div class="content">
-                <h2>{{ .Title }}</h2>
+                <h2>{{ .Title }}{{ if .Params.button_url }}<a class="external" target="_blank" href="{{ .Params.button_url }}">external source<i class="fa fa-external-link-square icon" aria-hidden="true"></i></a>{{ end }}</h2>
                 <div class="tags">
                   <ul id="categories">
                     {{ range .Params.topics }}
@@ -14,7 +14,11 @@
                 </div>
                 {{ with .Description }}<p>{{ . | safeHTML }}</p>{{ end }}
                 <ul class="actions stacked">
-                  <li><a href="{{ if .Params.button_url }}{{ .Params.button_url }}{{ else }}{{ .Permalink }}{{ end }}" class="button">{{ .Params.button_label }}</a></li>
+                  {{ if .Params.button_url }}
+                    <li><a href="{{ .Params.button_url }}" target="_blank" rel="noopener noreferrer" class="button">{{ .Params.button_label }}</a></li>
+                  {{ else }}
+                    <li><a href="{{ .Permalink }}" class="button">{{ .Params.button_label }}</a></li>
+                  {{ end }}
                 </ul>
             </div>
             {{ with .Params.image }}
