@@ -16,7 +16,7 @@ description: >+
   market entries, business focus, and what might unfold in the months ahead.
 
 draft: "false"
-fatured: "true"
+featured: "true"
 button_label: Read more
 image: /images/upload/5821a84e-ce0c-460e-8258-2c2d56f79a4f.png
 ---

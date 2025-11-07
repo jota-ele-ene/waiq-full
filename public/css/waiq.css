@@ -1,0 +1,362 @@
+body {
+  color: rgb(2,21,71)!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(2,21,71)!important;
+}
+
+.banner.style1 .image {
+    border: 4px solid rgb(0,168,188);
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-size: 300% 300%;*/
+    background-image: linear-gradient(45deg, white 0%, #9cecf5 100%);
+    -webkit-animation: AnimateBG 5s ease infinite;
+            animation: AnimateBG 5s ease infinite;
+}
+
+.dark {
+  color: rgb(2,21,71);
+}
+
+.light {
+  color: rgb(0,168,188);
+}
+
+.banner.style1 .image img {
+    -moz-object-fit: none;
+    -webkit-object-fit: none;
+    -ms-object-fit: none;
+    object-fit: none;
+    -moz-object-position: center;
+    -webkit-object-position: center;
+    -ms-object-position: center;
+    object-position: center;
+    max-width: 60%;
+    object-fit: contain;
+    margin: 0 20%;
+    display: block;
+}
+
+.banner.style1.image-bottom .image img {
+  object-position: bottom;
+}
+
+.bg {
+
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media screen and (min-width: 736px){
+.spotlight.style1:nth-child(even) {
+  -moz-flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+};
+}
+
+.gallery.style2 article .caption>* {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.gallery.style2 article .caption h3 {
+    color: white!important;
+}
+
+.gallery.style2 article .caption .icons .brands {
+    font-size: 1.2rem;
+}
+
+input[type="submit"],input[type="reset"],input[type="button"],button,.button {
+    background-color: rgb(2,21,71)!important;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+    color: white!important;
+}
+
+input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover,button:hover,.button:hover {
+    box-shadow: inset 0 0 0 1px rgb(0,168,188)!important;
+    background-color: rgb(0,168,188)!important;
+    color: white!important;
+}
+
+input[type="submit"]:active,input[type="reset"]:active,input[type="button"]:active,button:active,.button:active {
+    box-shadow: inset 0 0 0 1px rgb(0,168,188)!important;
+    background-color: #9cecf5!important;
+    color: rgb(2,21,71)!important;
+}
+
+input[type="submit"].primary,input[type="reset"].primary,input[type="button"].primary,button.primary,.button.primary {
+    background-color: rgb(2,21,71)!important;
+    box-shadow: none;
+    color: white!important;
+}
+
+input[type="submit"].primary:hover,input[type="reset"].primary:hover,input[type="button"].primary:hover,button.primary:hover,.button.primary:hover {
+    background-color: rgb(0,168,188)!important;
+    color: white!important;
+}
+
+input[type="submit"].primary:active,input[type="reset"].primary:active,input[type="button"].primary:active,button.primary:active,.button.primary:active {
+    background-color: #9cecf5!important;
+    color: rgb(2,21,71)!important;
+}
+
+footer a
+{
+  text-decoration: none;
+  color: #837164;
+}
+
+footer p
+{
+  letter-spacing: 6px;
+}
+
+body {
+  height: 100%;
+  font-family: 'tradegothiclt-bold', sans-serif;
+}
+
+#wrapper {
+  /*z-index: -1;*/
+  position: relative;
+}
+
+span {
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Styling the menu */
+
+/* Style the navbar */
+.single {
+    margin-top: 35px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: rgb(2,21,71);
+  z-index: 10;
+  text-align: center;
+  padding: 6px;
+}
+
+/* Navbar links */
+#navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 10px;
+  line-height: normal;
+  letter-spacing: 8px;
+}
+
+#navbar a.more {
+  border-right: solid white 1px;
+}
+
+#navbar a:hover {
+  color: #9cecf5!important;
+}
+
+.home-icon {
+    float: inline-start;
+    margin: 0.2em;
+    padding: 0;
+}
+/* Page content */
+/*#wrapper {
+  padding-top: 40px;
+}*/
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+.tags {
+    display: inline-block;
+    width: 100%;
+}
+
+#categories {
+  padding: 0!important;
+  margin-bottom: 6px!important;
+}
+
+#categories h4 {
+  font-size: smaller;
+}
+
+#categories a{
+  background-color: rgb(0,168,188);
+      text-decoration: none;
+      color: white;
+      padding: 2px 10px;
+      border-radius: 8px;
+}
+
+#categories.topics {
+  float: inline-start
+}
+
+#categories.areas {
+  float: inline-end
+}
+
+#categories h4.areas a{
+    color: rgb(0,168,188);
+    background: white;
+    border: rgb(0,168,188) solid 1px;
+}
+
+#categories li {
+  display: inline-block;
+  padding-left:0!important;
+  padding-right:6px;
+}
+
+footer {
+  border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+/* Search */
+
+
+.search-icon {
+    float: inline-end;
+    margin: 0.2em;
+    padding: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, .5);
+  transition: all ease 1s;
+  z-index: 50;
+}
+
+.modal-inactive {
+  display:none;
+}
+
+.closeoverlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  display: block;
+  z-index: 2;
+  position: fixed;
+  cursor: pointer;
+}
+
+.closebutton {
+    color: rgb(0,168,188);
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0 10px;
+    display: table;
+    float: inline-end;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+
+}
+
+.modal:target>.closeoverlay {
+  display: block;
+}
+
+.modal>div {
+  width: 300px;
+  height: 500px;
+  max-width: 75vw;
+  max-height: 75vh;
+  text-align: center;
+  position: relative;
+  background: white;
+  z-index: 300;
+}
+
+.wrap,
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.modal-content {
+ overflow-y:auto
+}
+
+#search {
+  padding: 15px;
+}
+
+.modal-content ul.alt li {
+  text-align: left;
+  padding: 10px 30px;
+}
+
+.modal-content ul#categories li {
+  border-top:none;
+}
+
+.modal-content ul#categories h4 {
+  margin: 0;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Topics on Welcome to #WAIQ Age</title>
+    <link>https://waiq-full.netlify.app/topics/</link>
+    <description>Recent content in Topics on Welcome to #WAIQ Age</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Thu, 06 Nov 2025 22:40:00 +0100</lastBuildDate><atom:link href="https://waiq-full.netlify.app/topics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>quantum</title>
+      <link>https://waiq-full.netlify.app/topics/quantum/</link>
+      <pubDate>Thu, 06 Nov 2025 22:40:00 +0100</pubDate>
+      
+      <guid>https://waiq-full.netlify.app/topics/quantum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AI</title>
+      <link>https://waiq-full.netlify.app/topics/ai/</link>
+      <pubDate>Tue, 28 Nov 2023 00:08:35 +0000</pubDate>
+      
+      <guid>https://waiq-full.netlify.app/topics/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web3</title>
+      <link>https://waiq-full.netlify.app/topics/web3/</link>
+      <pubDate>Tue, 28 Nov 2023 00:08:35 +0000</pubDate>
+      
+      <guid>https://waiq-full.netlify.app/topics/web3/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
