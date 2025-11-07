@@ -14,7 +14,7 @@
                 </div>
                 {{ with .Description }}<p>{{ . | safeHTML }}</p>{{ end }}
                 <ul class="actions stacked">
-                    <li><a href="{{ .Permalink }}" class="button">{{ .Params.button_label }}</a></li>
+                  <li><a href="{{ if .Params.button_url }}{{ .Params.button_url }}{{ else }}{{ .Permalink }}{{ end }}" class="button">{{ .Params.button_label }}</a></li>
                 </ul>
             </div>
             {{ with .Params.image }}
