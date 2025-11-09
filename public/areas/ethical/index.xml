@@ -7,6 +7,14 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>{year}</copyright>
+    <lastBuildDate>Tue, 21 Oct 2025 20:15:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/areas/ethical/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The AI Grand Bargain</title>
+      <link>http://localhost:1313/article/2025-11-07-the-ai-grand-bargain/</link>
+      <pubDate>Tue, 21 Oct 2025 20:15:00 +0200</pubDate>
+      <guid>http://localhost:1313/article/2025-11-07-the-ai-grand-bargain/</guid>
+      <description>&lt;p&gt;Ben Buchanan and Tantum Collins argues in Foreign Affairs for a new American model of artificial intelligence development based on a “grand bargain” between the tech industry and the government. This agreement would balance innovation with ethical oversight and security concerns. The authors emphasize the need for government involvement to regulate AI while incentivizing private sector investment and leadership.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

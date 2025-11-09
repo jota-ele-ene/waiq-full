@@ -49,8 +49,10 @@ collections:
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: 'false' }
       - { label: 'Featured', name: 'fatured', widget: 'boolean', default: 'true' }
+      - { label: 'Weight', name: 'weight', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Button label', name: 'button_label', widget: 'string', default: 'Read more' }
+      - { label: 'Button url', name: 'button_url', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'image' }
   - name: 'picture'
     label: 'People Profile'
