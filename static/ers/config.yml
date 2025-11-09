@@ -48,7 +48,7 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: 'false' }
-      - { label: 'Featured', name: 'fatured', widget: 'boolean', default: 'true' }
+      - { label: 'Featured', name: 'featured', widget: 'boolean', default: 'true' }
       - { label: 'Weight', name: 'weight', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Button label', name: 'button_label', widget: 'string', default: 'Read more' }
