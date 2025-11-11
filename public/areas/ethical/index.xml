@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>{year}</copyright>
-    <lastBuildDate>Tue, 21 Oct 2025 20:15:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 10 Nov 2025 19:07:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/areas/ethical/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Can an invention made with AI be patented?</title>
+      <link>http://localhost:1313/article/2025-11-10-can-an-invention-made-with-ai-be-patented/</link>
+      <pubDate>Mon, 10 Nov 2025 19:07:00 +0100</pubDate>
+      <guid>http://localhost:1313/article/2025-11-10-can-an-invention-made-with-ai-be-patented/</guid>
+      <description>&lt;p&gt;The patent system has historically been one of the pillars of the innovation ecosystem: it offers an economic incentive to those who create; that is, there is the expectation of an economic benefit generated in exchange for the temporary transfer of the use of their inventions. But if part of the creative process is taken over by AI, how do we redefine the value, authorship, and protection of what has been invented?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The AI Grand Bargain</title>
       <link>http://localhost:1313/article/2025-11-07-the-ai-grand-bargain/</link>

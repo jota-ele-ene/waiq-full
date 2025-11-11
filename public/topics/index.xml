@@ -7,26 +7,26 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>{year}</copyright>
-    <lastBuildDate>Thu, 06 Nov 2025 22:40:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 10 Nov 2025 19:07:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/topics/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>quantum</title>
-      <link>http://localhost:1313/topics/quantum/</link>
-      <pubDate>Thu, 06 Nov 2025 22:40:00 +0100</pubDate>
-      <guid>http://localhost:1313/topics/quantum/</guid>
-      <description></description>
-    </item>
     <item>
       <title>AI</title>
       <link>http://localhost:1313/topics/ai/</link>
-      <pubDate>Tue, 28 Oct 2025 19:18:00 +0100</pubDate>
+      <pubDate>Mon, 10 Nov 2025 19:07:00 +0100</pubDate>
       <guid>http://localhost:1313/topics/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>quantum</title>
+      <link>http://localhost:1313/topics/quantum/</link>
+      <pubDate>Sun, 09 Nov 2025 19:02:00 +0100</pubDate>
+      <guid>http://localhost:1313/topics/quantum/</guid>
       <description></description>
     </item>
     <item>
       <title>web3</title>
       <link>http://localhost:1313/topics/web3/</link>
-      <pubDate>Tue, 28 Oct 2025 19:18:00 +0100</pubDate>
+      <pubDate>Sun, 09 Nov 2025 19:02:00 +0100</pubDate>
       <guid>http://localhost:1313/topics/web3/</guid>
       <description></description>
     </item>

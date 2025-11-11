@@ -7,8 +7,36 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>{year}</copyright>
-    <lastBuildDate>Thu, 06 Nov 2025 22:40:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 10 Nov 2025 19:07:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/areas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ethical</title>
+      <link>http://localhost:1313/areas/ethical/</link>
+      <pubDate>Mon, 10 Nov 2025 19:07:00 +0100</pubDate>
+      <guid>http://localhost:1313/areas/ethical/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Innovation</title>
+      <link>http://localhost:1313/areas/innovation/</link>
+      <pubDate>Mon, 10 Nov 2025 19:07:00 +0100</pubDate>
+      <guid>http://localhost:1313/areas/innovation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Legal and regulatory</title>
+      <link>http://localhost:1313/areas/legal/</link>
+      <pubDate>Mon, 10 Nov 2025 19:07:00 +0100</pubDate>
+      <guid>http://localhost:1313/areas/legal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TEch</title>
+      <link>http://localhost:1313/areas/technology/</link>
+      <pubDate>Mon, 10 Nov 2025 19:07:00 +0100</pubDate>
+      <guid>http://localhost:1313/areas/technology/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Busines</title>
       <link>http://localhost:1313/areas/business/</link>
@@ -17,38 +45,10 @@
       <description></description>
     </item>
     <item>
-      <title>Innovation</title>
-      <link>http://localhost:1313/areas/innovation/</link>
-      <pubDate>Tue, 28 Oct 2025 19:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/areas/innovation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>TEch</title>
-      <link>http://localhost:1313/areas/technology/</link>
-      <pubDate>Tue, 28 Oct 2025 19:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/areas/technology/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ethical</title>
-      <link>http://localhost:1313/areas/ethical/</link>
-      <pubDate>Tue, 21 Oct 2025 20:15:00 +0200</pubDate>
-      <guid>http://localhost:1313/areas/ethical/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>IP</title>
       <link>http://localhost:1313/areas/ip/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/areas/ip/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Legal and regulatory</title>
-      <link>http://localhost:1313/areas/legal/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/areas/legal/</guid>
       <description></description>
     </item>
   </channel>

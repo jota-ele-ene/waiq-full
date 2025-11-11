@@ -30,17 +30,6 @@
             justify-content: center;
         }
 
-        /* Mobile */
-        @media (max-width: 600px) {
-            .content {
-                display:none!important;
-            }
-
-            .image {
-              height:100%!important;
-            }
-        }
-
         .image {
             display: inline!important;
         }
@@ -65,6 +54,9 @@
             font-weight: 700;
             margin-bottom: 10px;
         }
+
+        #form-position-desktop { display: inline }
+        #form-position-media { display: none }
 
         .logo p {
             color: #666;
@@ -569,15 +561,6 @@
             align-items: flex-start;
         }
 
-        @media (max-width: 600px) {
-          .confirmation-screen h2 {
-              margin: 5% auto 20px;
-          }
-          .confirmation-container {
-              display: block !important;
-            }
-        }
-
         /* Preview wrapper (izquierda) */
         .confirmation-image-wrapper {
             display: flex;
@@ -719,7 +702,10 @@
         }
 
         @media (max-width: 600px) {
+            #form-position-desktop { display: none }
+            #form-position-media { display: inline }
             .container { padding: 30px 20px; }
+            .content { padding: 0 15%; }
             .modal-content { padding: 30px 20px; }
             .form-row { grid-template-columns: 1fr; }
             .modal-buttons { flex-direction: column; }
@@ -727,7 +713,13 @@
             .confirmation-data-row { flex-direction: column; }
             .confirmation-data-row span { max-width: 100%; text-align: left; margin-top: 5px; }
             .image-info { grid-template-columns: 1fr; }
+            .image { height:100%!important; }
+            section.banner.style1 { display:grid; }
+            .loading-screen { margin:10px; }
+            .confirmation-screen h2 { margin: 5% auto 20px; }
+            .confirmation-container { display: block !important; }
         }
+
     </style>
 </head>
 <body>
@@ -737,8 +729,8 @@
  ">
     <div class="content">
         <h1 class="home">      <img src="../images/waiq-tm.png" alt="" height="100px"></h1>
-        <p>Welcome to the <strong>#WAIQ</strong> site. We have sent you this form because you have participated in <strong>#WAIQ Community</strong> activities on occasion. Please update your details so that we can stay in touch.
-</p>
+        <p>Welcome to the <strong>#WAIQ</strong> site. We have sent you this form because you have participated in <strong>#WAIQ Community</strong> activities on occasion. </p>
+        <p>Please fill out the <span id="form-position-media">below</span> form <span id="form-position-desktop">on the right</span> with <strong>your details</strong> so we can stay in touch.</p>
     </div>
     <div class="image">
       <div class="container ">
@@ -1045,7 +1037,6 @@
             document.getElementById('imageName').textContent = 'Foto actual del perfil';
             document.getElementById('imageSize').textContent = '—';
             document.getElementById('imageDimensions').textContent = '—';
-            document.getElementById('imageType').textContent = '—';
 
             label.classList.add('hidden');
             container.classList.add('active');
