@@ -1030,7 +1030,7 @@
 
             if (!preview || !container || !label) return;
 
-            preview.src = imageUrl;
+            preview.src = getDriveDirectUrl(imageUrl);
             document.getElementById('imageName').textContent = 'Foto actual del perfil';
             document.getElementById('imageSize').textContent = '—';
             document.getElementById('imageDimensions').textContent = '—';
@@ -1038,6 +1038,20 @@
             label.classList.add('hidden');
             container.classList.add('active');
             pictureBase64 = null;
+        }
+
+        function getDriveDirectUrl(urlCompartida) {
+          // Extrae el ID de la imagen del enlace compartido de Drive
+          const regex = /\/d\/([a-zA-Z0-9_-]+)/;
+          const match = urlCompartida.match(regex);
+          if (match && match[1]) {
+            const id = match[1];
+            // Construye la URL directa para usar en el src del img
+            return "https://drive.google.com/uc?id="+id+"&t=" + new Date().getTime();
+          } else {
+            console.error("No se pudo extraer el ID de la URL de Drive");
+            return null;
+          }
         }
 
         fileInput.addEventListener('change', (e) => {
