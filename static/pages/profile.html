@@ -264,14 +264,15 @@
         }
 
         #imagePreview.image-preview {
-          max-width: 150px;
-          max-height: 150px;
+          width: 120px;
+          height: 120px;
           border-radius: 12px;
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
           border: 3px solid #667eea;
           object-fit: cover;
           display: block;
           position: relative;
+          max-width: none !important;
         }
 
         .image-info {
@@ -309,8 +310,9 @@
             margin: 0 -75px;
             line-height: 10px;
             height: 20px;
-            width: 150px;
-            padding: 0;
+            width: 120px;
+                padding: 0;
+                font-size: x-small;
         }
 
         .change-image-btn:hover {
@@ -706,14 +708,14 @@
             #form-position-media { display: inline }
             .container { padding: 30px 20px; }
             .content { padding: 0 15%; }
-            .modal-content { padding: 30px 20px; }
+            .modal-content {     position: sticky; top: 20px; padding: 30px 20px; }
             .form-row { grid-template-columns: 1fr; }
             .modal-buttons { flex-direction: column; }
             .logo h1 { font-size: 2rem; }
             .confirmation-data-row { flex-direction: column; }
             .confirmation-data-row span { max-width: 100%; text-align: left; margin-top: 5px; }
             .image-info { grid-template-columns: 1fr; }
-            .image { height:100%!important; }
+            .image { height:auto!important; }
             section.banner.style1 { display:grid; }
             .loading-screen { margin:10px; }
             .confirmation-screen h2 { margin: 5% auto 20px; }
@@ -853,7 +855,7 @@
               </div>
 
               <div class="confirmation-data">
-                  <div class="confirmation-data-row">
+                  <div class="confirmation-data-row hidden">
                       <strong>ID:</strong>
                       <span id="confirmId"></span>
                   </div>
@@ -869,11 +871,11 @@
                       <strong>Email:</strong>
                       <span id="confirmEmail"></span>
                   </div>
-                  <div class="confirmation-data-row">
+                  <div class="confirmation-data-row hidden">
                       <strong>LinkedIn:</strong>
                       <span id="confirmLinkedin"></span>
                   </div>
-                  <div class="confirmation-data-row">
+                  <div class="confirmation-data-row hidden ">
                       <strong>GitHub:</strong>
                       <span id="confirmGithub"></span>
                   </div>
@@ -927,7 +929,7 @@
                     Cancelar
                 </button>
                 <button type="button"  id="finalSubmitBtn" onclick="finalSubmit()">
-                    Enviar definitivo
+                    Enviar
                 </button>
             </div>
         </div>
@@ -937,7 +939,7 @@
 
 
     <script>
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx7XTLdA_QDGL3WegW01X0snGUPL5oIqZj8DuyNsq6XFj-3Gb1ZmHAopegnoVdZoGhw/exec';
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzmkR1DSK_uHJclDXUa7gRPr0DCCEi45tANk3RbBNuhse_aPcVbMpKlMW0_4crFwk92xg/exec';
 
         const form = document.getElementById('contactForm');
         const submitBtn = document.getElementById('submitBtn');
@@ -956,8 +958,6 @@
         const consentPublicationCheckbox = document.getElementById('consentPublication');
         const email = document.getElementById('email');
 
-        let pictureBase64 = null;
-        let pictureName = '';
         let editMode = false;
         let currentRowId = null;
         let currentId = null;
@@ -973,8 +973,7 @@
                 formScreen.classList.remove('active');
                 loadProfileData(profileId);
             } else {
-                loadingScreen.classList.remove('active');
-                formScreen.classList.add('active');
+                window.location.href = '/';
             }
         });
 
@@ -1012,9 +1011,10 @@
                     }, 800);
 
                 } else {
-                    showMessage('Perfil no encontrado. Creando nuevo perfil.', 'error');
-                    loadingScreen.classList.remove('active');
-                    formScreen.classList.add('active');
+                    window.location.href = '/';
+                    //showMessage('Perfil no encontrado. Creando nuevo perfil.', 'error');
+                    //loadingScreen.classList.remove('active');
+                    //formScreen.classList.add('active');
                 }
             } catch (error) {
                 console.error('Error cargando perfil:', error);
@@ -1030,14 +1030,13 @@
 
             if (!preview || !container || !label) return;
 
-            preview.src = getDriveDirectUrl(imageUrl);
+            preview.src = imageUrl;
             document.getElementById('imageName').textContent = 'Foto actual del perfil';
             document.getElementById('imageSize').textContent = '—';
             document.getElementById('imageDimensions').textContent = '—';
 
             label.classList.add('hidden');
             container.classList.add('active');
-            pictureBase64 = null;
         }
 
         function getDriveDirectUrl(urlCompartida) {
@@ -1063,15 +1062,14 @@
                     return;
                 }
 
-                pictureName = file.name;
                 const reader = new FileReader();
 
                 reader.onload = (event) => {
-                    pictureBase64 = event.target.result;
                     const img = new Image();
                     img.onload = () => {
+                      console.log("img.onload() >" + event.target.result);
                         displayImagePreview(event.target.result, file, img.width, img.height);
-                    };
+                      };
                     img.src = event.target.result;
                 };
 
@@ -1173,14 +1171,12 @@
                 x: document.getElementById('x').value,
                 github: document.getElementById('github').value,
                 blog: document.getElementById('blog').value,
-                email: document.getElementById('email').value
+                email: document.getElementById('email').value,
+                picture: document.getElementById('imagePreview').src
             };
 
+            console.log("edirMore:"+editMode+"; currentId:"+currentId);
             if (editMode) formDataCache.rowId = currentRowId;
-            if (pictureBase64) {
-                formDataCache.picture = pictureBase64;
-                formDataCache.pictureName = pictureName;
-            }
 
             // Abrir modal
             openModal();
@@ -1221,9 +1217,11 @@
             finalSubmitBtn.disabled = true;
             finalSubmitBtn.textContent = 'Enviando...';
 
-            formDataCache.consentData = consentDataCheckbox.checked;
-            formDataCache.consentPublication = consentPublicationCheckbox.checked;
+            formDataCache.consentData = consentDataCheckbox.checked ? "SI" : "NO";
 
+            formDataCache.consentWeb = consentPublicationCheckbox.checked ? "SI" : "NO";
+
+            console.log("formDataCache:"+JSON.stringify(formDataCache))
             try {
                 await fetch(SCRIPT_URL, {
                     method: 'POST',
@@ -1248,15 +1246,12 @@
             document.getElementById('confirmId').textContent = currentId || 'Nuevo perfil';
             document.getElementById('confirmName').textContent = data.name + ' ' + data.surname;
             document.getElementById('confirmRol').textContent = data.rol || 'No especificado';
-            document.getElementById('confirmLinkedin').textContent = data.linkedin || 'No añadido';
-            document.getElementById('confirmGithub').textContent = data.github || 'No añadido';
-            document.getElementById('confirmEmail').textContent = data.email || 'No añadido';
+            if (data.linkedin) { document.getElementById('confirmLinkedin').textContent = data.linkedin } else { document.getElementById('confirmLinkedin').classList.add("hidden");}
+            if (data.github) { document.getElementById('confirmGithub').textContent = data.github  } else { document.getElementById('confirmGithub').classList.add("hidden");}
+            document.getElementById('confirmEmail').textContent = data.email  || "No especificado";
 
-            if (pictureBase64) {
-                document.getElementById('confirmationImage').src = pictureBase64;
-                document.getElementById('confirmationImage').style.display = 'block';
-            } else if (existingPictureUrl) {
-                document.getElementById('confirmationImage').src = existingPictureUrl;
+            if (data.picture) {
+                document.getElementById('confirmationImage').src = data.picture;
                 document.getElementById('confirmationImage').style.display = 'block';
             }
 
@@ -1270,8 +1265,6 @@
             } else {
                 form.reset();
                 fileInput.value = '';
-                pictureBase64 = null;
-                pictureName = '';
                 fileLabel.classList.remove('hidden');
                 imagePreviewContainer.classList.remove('active');
 
