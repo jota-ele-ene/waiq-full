@@ -1,0 +1,14 @@
+  - name: Install Hugo
+    run: |
+      wget -qO - https://github.com/gohugoio/hugo/releases/download/v0.152.2/hugo_extended_0.152.2_linux-amd64.tar.gz | tar xz
+      mv hugo ~/hugo
+
+  - name: Build
+    run: ~/hugo --minify
+
+  - name: Deploy
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    uses: peaceiris/actions-gh-pages@v3
+    with:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+      publish_dir: ./public
