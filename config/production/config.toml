@@ -47,3 +47,10 @@ swetrixAnalytics = "3UYKaHJP56by"
 [Params.social]
 
 [Params.asset]
+
+## ------------------------------------------------
+## Github Pages Deployment
+## ------------------------------------------------
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
