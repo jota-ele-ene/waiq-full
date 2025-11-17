@@ -147,7 +147,7 @@
 
         .form-group label {
           display: block;
-          margin-bottom: 8px;
+          margin-bottom: 2px;
           color: #333;
           font-weight: 600;
           font-size: 0.8em;
@@ -170,12 +170,19 @@
             font-family: inherit;
             background: white;
             height: 2rem!important;
+            color: #333;
         }
 
         .form-group input:focus, .form-group textarea:focus {
             outline: none;
             border-color: rgb(0,168,188);
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .form-group input::placeholder, .form-group textarea::placeholder,
+          .form-group input:-webkit-input-placeholder, .form-group textarea::-webkit-input-placeholder {
+          color: #999;
+          opacity: 1; /* Importante para navegadores modernos */
         }
 
         /* File Input */
