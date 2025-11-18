@@ -482,114 +482,20 @@ networks, and markets. </p>
 <script src='http://localhost:1313/js/bundle.min.js'></script>
 
 
-		<div class="login-container">
-    <h1>🔐</h1>
-    <h1 style="font-size: 20px;">Acceso Protegido</h1>
-    <p class="subtitle">Ingresa la contraseña para continuar</p>
-
-    <form id="loginForm">
-        <div class="form-group">
-            <label for="password">Contraseña</label>
-            <input
-                type="password"
-                id="password"
-                placeholder="••••••••"
-                required
-                autocomplete="current-password"
-            >
-        </div>
-
-        <button type="submit">Acceder</button>
-
-        <div class="loading" id="loading">Verificando...</div>
-        <div class="error" id="error">❌ Contraseña incorrecta</div>
-        <div class="success" id="success">✓ Acceso correcto. Redirigiendo...</div>
-    </form>
-</div>
-
+		
 <script>
-    const PASSWORD_HASH = "f9b841e1a6eb12f0af72c0107019c8da4eb4d83758230a383e9c26a1c7a30b82";
-
-    
-    async function sha256(message) {
-        try {
-            const msgBuffer = new TextEncoder().encode(message);
-            const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
-            const hashArray = Array.from(new Uint8Array(hashBuffer));
-            const hashHex = hashArray
-                .map(b => b.toString(16).padStart(2, '0'))
-                .join('');
-            return hashHex;
-        } catch (error) {
-            console.error('Error al hashear:', error);
-            return null;
-        }
-    }
-
-    
-    document.getElementById('loginForm').addEventListener('submit', async function(e) {
-        e.preventDefault();
-
-        const passwordInput = document.getElementById('password');
-        const errorDiv = document.getElementById('error');
-        const successDiv = document.getElementById('success');
-        const loadingDiv = document.getElementById('loading');
-
-        
-        errorDiv.style.display = 'none';
-        successDiv.style.display = 'none';
-        loadingDiv.style.display = 'block';
-
-        const inputPassword = passwordInput.value;
-
-        try {
-            
-            const inputHash = await sha256(inputPassword);
-
-            
-            await new Promise(resolve => setTimeout(resolve, 300));
-
-            
-            if (inputHash === PASSWORD_HASH) {
-                successDiv.style.display = 'block';
-                loadingDiv.style.display = 'none';
-
-                
-                sessionStorage.setItem('authenticated', 'true');
-                sessionStorage.setItem('authTime', Date.now());
-
-                
-                setTimeout(() => {
-                    window.location.href = '/waiq-full/index.html';
-                }, 1000);
-            } else {
-                errorDiv.style.display = 'block';
-                loadingDiv.style.display = 'none';
-                passwordInput.value = '';
-                passwordInput.focus();
-            }
-        } catch (error) {
-            console.error('Error durante autenticación:', error);
-            errorDiv.textContent = '❌ Error en la autenticación. Intenta de nuevo.';
-            errorDiv.style.display = 'block';
-            loadingDiv.style.display = 'none';
-        }
-    });
-
+    const baseURL = "http:\/\/localhost:1313\/";
     
     if (sessionStorage.getItem('authenticated') === 'true') {
         const authTime = sessionStorage.getItem('authTime');
         
-        if (Date.now() - parseInt(authTime) < 8 * 60 * 60 * 1000) {
-            window.location.href = '/waiq-full/index.html';
-        } else {
+        if (Date.now() - parseInt(authTime) >  60 * 1000) {
             sessionStorage.removeItem('authenticated');
             sessionStorage.removeItem('authTime');
+            window.location.href = baseURL & '/pages/gate.html';
         }
     }
-
-    
-    document.getElementById('password').focus();
+    else window.location.href = baseURL & '/pages/gate.html';
 </script>
 
 
