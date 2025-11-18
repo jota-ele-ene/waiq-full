@@ -314,7 +314,7 @@
     if (sessionStorage.getItem('authenticated') === 'true') {
         const authTime = sessionStorage.getItem('authTime');
         // Sesión válida por 8 horas
-        if (Date.now() - parseInt(authTime) <  60 * 1000) {
+        if (Date.now() - parseInt(authTime) <  8 * 60 * 60 * 1000) {
             window.location.href = '../index.html';
         } else {
             sessionStorage.removeItem('authenticated');
