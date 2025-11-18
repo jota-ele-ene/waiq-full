@@ -299,7 +299,7 @@
 
                 // Redirigir después de 1 segundo
                 setTimeout(() => {
-                    window.location.href = '/index.html';
+                    window.location.href = '../index.html';
                 }, 1000);
             } else {
                 errorDiv.style.display = 'block';
@@ -320,7 +320,7 @@
         const authTime = sessionStorage.getItem('authTime');
         // Sesión válida por 8 horas
         if (Date.now() - parseInt(authTime) <  60 * 1000) {
-            window.location.href = '/index.html';
+            window.location.href = '../index.html';
         } else {
             sessionStorage.removeItem('authenticated');
             sessionStorage.removeItem('authTime');
