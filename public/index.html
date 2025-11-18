@@ -511,6 +511,22 @@ incentivizing private sector investment and leadership. </p>
     <div class="gallery style2 medium onload-fade-in onscroll-fade-in">
         
             <article>
+  <img src="./images/upload/1517464842284.jfif" alt="" />
+  <div class="caption">
+      <h3>Esperanza Cuenca Gómez</h3>
+      <p><p>Quantum contributor</p>
+</p>
+      <ul class="icons">
+        
+        <li><a href="https://www.linkedin.com/in/esperanza-cuenca-gomez/" class="icon brands style1 fa-linkedin"><span class="label">Linkedin</span></a></li>
+        
+        
+      </ul>
+  </div>
+</article>
+
+        
+            <article>
   <img src="./images/upload/1735116697519.jfif" alt="" />
   <div class="caption">
       <h3>José Luis Amat</h3>
@@ -527,14 +543,14 @@ incentivizing private sector investment and leadership. </p>
 
         
             <article>
-  <img src="./images/upload/1516302408070.jfif" alt="" />
+  <img src="./images/upload/1658906580297.jfif" alt="" />
   <div class="caption">
-      <h3>Luis Ignacio Vicente</h3>
-      <p><p>Founder &amp; Ideologist</p>
+      <h3>Patricia Ramos</h3>
+      <p><p>IP expert</p>
 </p>
       <ul class="icons">
         
-        <li><a href="https://www.linkedin.com/in/luisignaciovicente/" class="icon brands style1 fa-linkedin"><span class="label">Linkedin</span></a></li>
+        <li><a href="https://www.linkedin.com/in/patriciaramospatentintelectual/" class="icon brands style1 fa-linkedin"><span class="label">Linkedin</span></a></li>
         
         
       </ul>
@@ -591,30 +607,14 @@ incentivizing private sector investment and leadership. </p>
 
         
             <article>
-  <img src="./images/upload/1658906580297.jfif" alt="" />
+  <img src="./images/upload/1516302408070.jfif" alt="" />
   <div class="caption">
-      <h3>Patricia Ramos</h3>
-      <p><p>IP expert</p>
+      <h3>Luis Ignacio Vicente</h3>
+      <p><p>Founder &amp; Ideologist</p>
 </p>
       <ul class="icons">
         
-        <li><a href="https://www.linkedin.com/in/patriciaramospatentintelectual/" class="icon brands style1 fa-linkedin"><span class="label">Linkedin</span></a></li>
-        
-        
-      </ul>
-  </div>
-</article>
-
-        
-            <article>
-  <img src="./images/upload/1517464842284.jfif" alt="" />
-  <div class="caption">
-      <h3>Esperanza Cuenca Gómez</h3>
-      <p><p>Quantum contributor</p>
-</p>
-      <ul class="icons">
-        
-        <li><a href="https://www.linkedin.com/in/esperanza-cuenca-gomez/" class="icon brands style1 fa-linkedin"><span class="label">Linkedin</span></a></li>
+        <li><a href="https://www.linkedin.com/in/luisignaciovicente/" class="icon brands style1 fa-linkedin"><span class="label">Linkedin</span></a></li>
         
         
       </ul>
@@ -664,23 +664,19 @@ incentivizing private sector investment and leadership. </p>
 <script src='http://localhost:1313/js/bundle.min.js'></script>
 
 
-		<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      console.log("netlifyIdentity: on init:"+JSON.stringify(user))
-      if (!user) {
-        if ("") { 
-          document.location.href = "/ers/";
-          console.log("netlifyIdentity; gated :-)")
-        } else console.log("no gated")
-        console.log("netlifyIdentity: on init, no user ")
-        window.netlifyIdentity.on("login", () => {
-          console.log("netlifyIdentity: on login, redirecting ")
-          document.location.href = "/ers/";
-        });
-      }
-    });
-  }
+		
+<script>
+    
+    if (sessionStorage.getItem('authenticated') === 'true') {
+        const authTime = sessionStorage.getItem('authTime');
+        
+        if (Date.now() - parseInt(authTime) >  60 * 1000) {
+            sessionStorage.removeItem('authenticated');
+            sessionStorage.removeItem('authTime');
+            window.location.href = '/pages/gate.html';
+        }
+    }
+    else window.location.href = '/pages/gate.html';
 </script>
 
 

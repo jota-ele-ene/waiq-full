@@ -1,18 +1,14 @@
+
 <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      console.log("netlifyIdentity: on init:"+JSON.stringify(user))
-      if (!user) {
-        if ("{{ .Site.Params.gated }}") { // go to ers
-          document.location.href = "/ers/";
-          console.log("netlifyIdentity; gated :-)")
-        } else console.log("no gated")
-        console.log("netlifyIdentity: on init, no user ")
-        window.netlifyIdentity.on("login", () => {
-          console.log("netlifyIdentity: on login, redirecting ")
-          document.location.href = "/ers/";
-        });
-      }
-    });
-  }
+    // Si ya está autenticado, redirigir directamente
+    if (sessionStorage.getItem('authenticated') === 'true') {
+        const authTime = sessionStorage.getItem('authTime');
+        // Sesión válida por 8 horas
+        if (Date.now() - parseInt(authTime) >  60 * 1000) {
+            sessionStorage.removeItem('authenticated');
+            sessionStorage.removeItem('authTime');
+            window.location.href = '/pages/gate.html';
+        }
+    }
+    else window.location.href = '/pages/gate.html';
 </script>
