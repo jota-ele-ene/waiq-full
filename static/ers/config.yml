@@ -1,9 +1,9 @@
 backend:
-  name: github
+  name: git
   repo: jota-ele-ene/waiq-full.git
   branch: main # Branch to update (optional; defaults to master)
-  base_url: https://sveltia-cms-auth-prod.waiq-full.workers.dev
-  auth_endpoint: /auth
+  #base_url: https://sveltia-cms-auth-prod.waiq-full.workers.dev
+  #auth_endpoint: /auth
 media_folder: static/images/upload
 public_folder: /images/upload
 publish_mode: editorial_workflow
