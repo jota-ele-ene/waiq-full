@@ -1,8 +1,6 @@
 {
   "dependencies": {
-    "lunr": "^2.3.9",
-    "netlify-identity-widget": "^1.9.2",
-    "react-dom": "^18.3.1"
+    "lunr": "^2.3.9"
   },
   "devDependencies": {
     "hugo-bin": "^0.149.2"
