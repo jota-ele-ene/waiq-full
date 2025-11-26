@@ -81,7 +81,7 @@ jobs:
             hugo-
       - name: Build the site
         env:
-          TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
+          TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
         run: |
           npm install

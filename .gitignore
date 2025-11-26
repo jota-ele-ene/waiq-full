@@ -1,4 +1,5 @@
 .syncmetadata
 public/
 node_modules/
+resources/
 .env
