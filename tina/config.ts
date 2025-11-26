@@ -7,6 +7,8 @@ import { defineConfig } from "tinacms";
 //  process.env.HEAD ||
 //  "main";
   const branch = "main";
+  //const isLocal = process.env.NODE_ENV === "development";
+  const isProduction = process.env.NODE_ENV === "production";
 
 export default defineConfig({
   branch,
@@ -28,7 +30,7 @@ export default defineConfig({
   },
 
   // Se añade esta opción para que TinaCMS cargue assets con la ruta correcta
-  assetsPath: "/public/admin/",
+  assetsPath: isProduction ? "/waiq-full/admin/" : "/admin/",
 
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/r/content-modelling-collections/
   schema: {
