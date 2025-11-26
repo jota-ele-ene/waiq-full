@@ -62,11 +62,12 @@ export default defineConfig({
         path: "content/article",
         fields: [
           { type: "string", name: "title", label: "Title", isTitle: true, required: true },
+          { type: "string", name: "topics", label: "Topics", list: true },
           { type: "string", name: "areas", label: "Areas", list: true },
           { type: "datetime", name: "date", label: "Date" },
           { type: "string", name: "description", label: "Description" },
           { type: "boolean", name: "draft", label: "Draft" },
-          { type: "string", name: "button_link", label: "Button Link" },
+          { type: "string", name: "button_url", label: "Button link" },
           { type: "boolean", name: "featured", label: "Featured" },
           { type: "image", name: "image", label: "Image" },
           { type: "rich-text", name: "body", label: "Body", isBody: true }

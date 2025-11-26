@@ -18,7 +18,7 @@ publishDir = "public"
 
 # Remote
 #baseURL = "https://jota-ele-ene.github.io/waiq-full/"
-baseURL = "https://forge.waiq.technolgy/"
+baseURL = "https://forge.waiq.technology/"
 #publishDir = "//centos/sites/hugodev/hugostory/"
 
 ## -----------------------------------------------
