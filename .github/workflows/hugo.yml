@@ -114,7 +114,7 @@ jobs:
           path: ./public
       - name: List TinaCMS admin folder
         run: ls -la public/admin
-    deploy:
+  deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
