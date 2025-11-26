@@ -112,7 +112,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
-  deploy:
+      - name: List TinaCMS admin folder
+        run: ls -la public/admin
+    deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
