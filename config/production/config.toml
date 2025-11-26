@@ -17,7 +17,7 @@ relativeURLs = "true"
 publishDir = "public"
 
 # Remote
-baseURL = "https://jota-ele-ene.github.io/"
+baseURL = "https://jota-ele-ene.github.io/waiq-full"
 #baseURL = "https://waiq-full.netlify.app/"
 #publishDir = "//centos/sites/hugodev/hugostory/"
 
