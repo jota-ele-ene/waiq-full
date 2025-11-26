@@ -88,7 +88,7 @@ jobs:
           npm install
 
           # 1. Inyección de variables en línea (como solución anterior)
-          export NEXT_PUBLIC_TINA_CLIENT_ID=$TINA_CLIENT_ID
+          export NEXT_PUBLIC_TINA_CLIENT_ID=$TINA_PUBLIC_CLIENT_ID
           export TINA_TOKEN=$TINA_TOKEN
           export NODE_ENV=$NODE_ENV
 
@@ -100,11 +100,10 @@ jobs:
           echo "Length of Token is ${#TINA_TOKEN}"
           echo "Node env: ${NODE_ENV}***"
           echo "Length of Node env is ${#NODE_ENV}"
-          echo ${NODE_ENV}.length
           echo "-----------------------------------"
 
           # 3. Comando de compilación (inyección directa en la línea)
-          NEXT_PUBLIC_TINA_CLIENT_ID=$TINA_CLIENT_ID TINA_TOKEN=$TINA_TOKEN npx tinacms build && hugo \
+          NEXT_PUBLIC_TINA_CLIENT_ID=$TINA_PUBLIC_CLIENT_ID TINA_TOKEN=$TINA_TOKEN npx tinacms build && hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
