@@ -84,8 +84,12 @@ jobs:
           NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
         run: |
+          # 1. Instalar dependencias (ya confirmado que funciona)
           npm install
-          tinacms build && hugo \
+
+          # 2. Ejecutar la compilación de Tina usando npx para resolver la ruta.
+          #    Y luego ejecutar Hugo.
+          npx tinacms build && hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
