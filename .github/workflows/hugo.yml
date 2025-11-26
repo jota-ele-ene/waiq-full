@@ -78,16 +78,11 @@ jobs:
           restore-keys:
             hugo-
       - name: Build the site
-        env:
-          # PASO 1: Inyección de variables de entorno para Tina Cloud
+        env: |
           NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-        run:
-          # PASO 2: Instalar dependencias de Node.js (incluyendo @tinacms/cli)
+        run: |
           npm install
-
-          # PASO 3: Ejecutar la compilación de Tina (requiere las variables de entorno)
-          # y luego ejecutar Hugo con sus argumentos.
           tinacms build && hugo \
             --gc \
             --minify \
