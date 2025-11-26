@@ -30,7 +30,8 @@ export default defineConfig({
   },
 
   // Se añade esta opción para que TinaCMS cargue assets con la ruta correcta
-  assetsPath: isProduction ? "/waiq-full/admin/" : "/admin/",
+  //assetsPath: isProduction ? "/waiq-full/admin/" : "/admin/",
+  assetsPath: "/waiq-full/admin/" ,
 
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/r/content-modelling-collections/
   schema: {

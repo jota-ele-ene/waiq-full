@@ -83,17 +83,24 @@ jobs:
         env:
           TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+          NODE_ENV: ${{ secrets.NODE_ENV }}
         run: |
           npm install
 
           # 1. Inyección de variables en línea (como solución anterior)
           export NEXT_PUBLIC_TINA_CLIENT_ID=$TINA_CLIENT_ID
           export TINA_TOKEN=$TINA_TOKEN
+          export NODE_ENV=$NODE_ENV
 
           # 2. **PASO DE DEPURACIÓN AÑADIDO:**
           echo "Verificando Tina Config..."
           echo "Client ID (parcial): ${NEXT_PUBLIC_TINA_CLIENT_ID}***"
+          echo "Length of ID is ${#NEXT_PUBLIC_TINA_CLIENT_ID}"
           echo "Token (parcial): ${TINA_TOKEN}***"
+          echo "Length of Token is ${#TINA_TOKEN}"
+          echo "Node env: ${NODE_ENV}***"
+          echo "Length of Node env is ${#NODE_ENV}"
+          echo ${NODE_ENV}.length
           echo "-----------------------------------"
 
           # 3. Comando de compilación (inyección directa en la línea)
