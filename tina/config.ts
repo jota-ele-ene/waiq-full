@@ -18,17 +18,17 @@ export default defineConfig({
 
   build: {
     outputFolder: "admin",
-    publicFolder: "static",
+    publicFolder: "public",
   },
   media: {
     tina: {
       mediaRoot: "",
-      publicFolder: "static",
+      publicFolder: "public",
     },
   },
 
   // Se añade esta opción para que TinaCMS cargue assets con la ruta correcta
-  assetsPath: "/static/admin/",
+  assetsPath: "/public/admin/",
 
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/r/content-modelling-collections/
   schema: {
