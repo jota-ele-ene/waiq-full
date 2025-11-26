@@ -79,21 +79,25 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys:
             hugo-
-      - name: Build the site
+- name: Build the site
         env:
-          NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
+          TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
         run: |
-          # 1. Instalar dependencias (ya confirmado que funciona)
           npm install
 
-          # 2. Ejecutar la compilación de Tina usando npx para resolver la ruta.
-          #    Y luego ejecutar Hugo.
-          export NEXT_PUBLIC_TINA_CLIENT_ID=$TINA_CLIENT_ID_SECRET
-          export TINA_TOKEN=$TINA_TOKEN_SECRET
+          # 1. Inyección de variables en línea (como solución anterior)
+          export NEXT_PUBLIC_TINA_CLIENT_ID=$TINA_CLIENT_ID
+          export TINA_TOKEN=$TINA_TOKEN
 
-          # Ahora ejecutamos la compilación.
-          npx tinacms build && hugo \
+          # 2. **PASO DE DEPURACIÓN AÑADIDO:**
+          echo "Verificando Tina Config..."
+          echo "Client ID (parcial): ${NEXT_PUBLIC_TINA_CLIENT_ID}***"
+          echo "Token (parcial): ${TINA_TOKEN}***"
+          echo "-----------------------------------"
+
+          # 3. Comando de compilación (inyección directa en la línea)
+          NEXT_PUBLIC_TINA_CLIENT_ID=$TINA_CLIENT_ID TINA_TOKEN=$TINA_TOKEN npx tinacms build && hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
