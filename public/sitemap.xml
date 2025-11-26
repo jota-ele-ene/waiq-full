@@ -95,6 +95,8 @@
     <loc>http://localhost:1313/elements/</loc>
     <lastmod>2023-10-24T00:50:58+02:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/hello-world/</loc>
+  </url><url>
     <loc>http://localhost:1313/areas/ip/</loc>
   </url><url>
     <loc>http://localhost:1313/404/</loc>
