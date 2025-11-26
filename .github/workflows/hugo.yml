@@ -66,6 +66,8 @@ jobs:
       - name: Install Node.js dependencies
         run: |
           [[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true
+      - name: Install Node Dependencies
+        run: npm install
       - name: Configure Git
         run: |
           git config core.quotepath false
@@ -78,7 +80,7 @@ jobs:
           restore-keys:
             hugo-
       - name: Build the site
-        env: 
+        env:
           NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
         run: |
