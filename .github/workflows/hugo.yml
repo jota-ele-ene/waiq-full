@@ -79,7 +79,7 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys:
             hugo-
-- name: Build the site
+      - name: Build the site
         env:
           TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
