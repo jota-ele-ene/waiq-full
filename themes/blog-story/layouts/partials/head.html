@@ -23,8 +23,6 @@
 
 	<link rel="canonical" href="{{ .Permalink }}" />
 
-
-
 	<!-- CSS -->
 	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "outputStyle" "compressed" "enableSourceMap" false) | minify }}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">

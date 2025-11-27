@@ -62,8 +62,12 @@ export default defineConfig({
         path: "content/article",
         fields: [
           { type: "string", name: "title", label: "Title", isTitle: true, required: true },
-          { type: "string", name: "topics", label: "Topics", list: true },
-          { type: "string", name: "areas", label: "Areas", list: true },
+          { type: "string", name: "areas", label: "Areas", list: true,
+              options: ['technology', 'society', 'legal', 'ip', 'regulation', 'innovation', 'use cases', 'business', 'ethical'] },
+          { type: "string", name: 'topics', label: 'Topics', component: 'list', field: {
+              component: 'select',
+              options: ['web3', 'ai', 'quantum']},
+          },
           { type: "datetime", name: "date", label: "Date" },
           { type: "string", name: "description", label: "Description" },
           { type: "boolean", name: "draft", label: "Draft" },
