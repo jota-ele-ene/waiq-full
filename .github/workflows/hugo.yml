@@ -102,7 +102,7 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
-      - name: Verify 404.html exists
+      - name: Verify public folder contents
         run: ls -l public
       - name: Cache save
         id: cache-save
