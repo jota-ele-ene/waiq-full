@@ -92,12 +92,12 @@ jobs:
 
           # 2. **PASO DE DEPURACIÓN AÑADIDO:**
           echo "Verificando Tina Config..."
-          echo "Length of Client ID: ${#NEXT_PUBLIC_TINA_CLIENT_ID}***"
+          echo "Length of Client ID: ${#TINA_PUBLIC_CLIENT_ID}***"
           echo "Length of Token: ${#TINA_TOKEN}***"
           echo "-----------------------------------"
 
           # 3. Comando de compilación (inyección directa en la línea)
-          NEXT_PUBLIC_TINA_CLIENT_ID=$TINA_CLIENT_ID TINA_TOKEN=$TINA_TOKEN npx tinacms build && hugo \
+          npx tinacms build && hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
