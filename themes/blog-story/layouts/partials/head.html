@@ -36,11 +36,6 @@
 	<!-- identity widget -->
 	<!--<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>-->
 
-	<!-- FontAwesome CSS -->
-	{{ range .Site.Params.asset.fontawesome_css -}}
-		<link rel="stylesheet" href="{{ . | absURL }}">
-	{{- end }}
-
 	{{ range .Site.Params.asset.additional_css -}}
 		<link rel="stylesheet" href="{{ . | absURL }}">
 	{{- end }}
