@@ -5,4 +5,4 @@ draft: false
 image: ./images/upload/1735116697519.jfif
 linkedin: https://www.linkedin.com/in/jose-luis-amat-lawyer/
 ---
-Founder & Web3 lawyer
+Founder & Lecturer
